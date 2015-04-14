@@ -11,13 +11,13 @@ module.exports = function(grunt) {
 
 		clean : {
 			options : { force: true },
-	  		prod : ["/var/www/test.com/*"] 
+	  		prod : ["/var/www/egegorgulu.com/*"] 
 		},
 
 		copy: {
 	  		prod: {
 	  			files: [
-	  				{ expand : true, cwd: '_site/', src : '**', dest : '/var/www/test.com/' }
+	  				{ expand : true, cwd: '_site/', src : '**', dest : '/var/www/egegorgulu.com/' }
 	  			]
 	  		}
 		}
