@@ -3,4 +3,19 @@ layout: default
 title: Works | Ege Görgülü | Designer
 ---
 
-Works
+<div class="container-fluid">
+	<div style="max-width:900px;margin:0 auto;">
+		<div class="row">
+			<h1>WORKS</h1>
+		</div>
+		<div class="row">
+			<ul>
+				{% for post in site.posts %}
+				<li>
+					<a href="{{ post.url }}">{{ post.title }}</a>
+				</li>
+				{% endfor %}
+			</ul>					
+		</div>
+	</div>
+</div>
