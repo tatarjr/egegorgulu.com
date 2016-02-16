@@ -2,21 +2,23 @@ ul {
   margin:0;
 }
 
-.pri-font() { font-family: "rooney-sans",sans-serif; }
-.sec-font() { font-family: "proxima-nova",sans-serif; }
-.tri-font() { font-family: "freight-sans-pro",sans-serif; }
+.font-body() { font-family: "omnes-pro",sans-serif; }
+.font-display() { font-family: "reklame-script",sans-serif; }
+.font-accent() { font-family: "rooney-sans",sans-serif; }
 
 body {
-  .pri-font();
+  .font-body();
 }
 
 h1 {
 	font-size:3em;
 	text-transform: uppercase;
 	font-weight: 800;
+	.font-accent();
 }
 
 p {
 	font-size: 18px;
 	font-weight: 300;
+	letter-spacing: 0.3px;
 }
