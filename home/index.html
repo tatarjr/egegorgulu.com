@@ -4,4 +4,26 @@ title: Ege Görgülü | Designer
 ---
 
 
-Home
+<section class="container-fluid sect-hero">
+	<div class="sect-inner">
+		<h3 class="warmup">Hi. Welcome.</h3>
+		<p class="intro">Ege Gorgulu is a product designer and Director of Product Design at <a href="//jotform.com">JotForm</a>, currently living in Ankara.</p>
+	</div>
+</section>
+
+<section class="container-fluid sect-works">
+	<div class="sect-inner">
+		<h1>Works</h1>
+		<ul class="grid list-unstyled">
+			{% for post in site.posts %}
+			<li class="grid_item item-{{ post.title }}">
+				<a href="{{ post.url }}">
+					<h4>{{ post.title }}</h4>
+					<span>Role</span>
+					<span>Dates</span>
+				</a>
+			</li>
+			{% endfor %}
+		</ul>	
+	</div>
+</section>
