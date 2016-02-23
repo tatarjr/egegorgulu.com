@@ -19,8 +19,8 @@ title: Ege Görgülü | Designer
 			<li class="grid_item item-{{ post.title }}">
 				<a href="{{ post.url }}">
 					<h4>{{ post.title }}</h4>
-					<span>Role</span>
-					<span>Dates</span>
+					<div class="grid_item_role">{{ post.role }}</div>
+					<p class="grid_item_desc">{{ post.desc }}</p>
 				</a>
 			</li>
 			{% endfor %}

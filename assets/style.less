@@ -13,6 +13,9 @@ body {
 
 a {
 	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 h1 {
@@ -28,10 +31,20 @@ p {
 	letter-spacing: 0.3px;
 }
 
+section {
+	position: relative;
+	z-index: 1;
+}
 
 .masthead {
 	border-bottom: 1px solid #eee;
 	font-size: 18px;
+	position: fixed;
+	background: #fff;
+	z-index: 10;
+	top:0;
+	left: 0;
+	width:100%;
 	.font-display();
 	.row {
 		margin:0;
@@ -48,6 +61,7 @@ p {
 }
 .sect-hero {
 	height: 100vh;
+	background:#f5f5f5;
 	border-bottom: 1px solid #eee;
 }
 
@@ -83,7 +97,24 @@ p {
 	a {
 		display:block;
 		background:#eee;
-		padding:12px;
+		padding:30px 36px;
 		margin:12px 0;
+		color:inherit;
+		height: 80vh;
+	}
+	h4 {
+		.font-accent();
+		font-weight: 700;
+		font-size: 30px;
+	}
+	&_role {
+		font-size: 12px;
+		max-width: 40%;
+		margin:0 0 18px;
+		text-transform: uppercase;
+	}
+
+	&_desc {
+		max-width: 40%;
 	}
 }

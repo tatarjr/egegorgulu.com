@@ -2,6 +2,8 @@
 layout: post
 title: Before-After.js
 permalink: /works/beforeafterjs
+role: Front-End Development
+desc: Before-after.js is an image comparison slider built with Javascript.
 ---
 
 # before-after.js
