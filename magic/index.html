@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Magic</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.typekit.net/vss4qmu.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+      @font-face {
+        font-family: 'weather';
+        src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot');
+        src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
+             url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.woff') format('woff'),
+             url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.ttf') format('truetype'),
+             url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+      
+      .icon-0:before { content: ":"; }
+      .icon-1:before { content: "p"; }
+      .icon-2:before { content: "S"; }
+      .icon-3:before { content: "Q"; }
+      .icon-4:before { content: "S"; }
+      .icon-5:before { content: "W"; }
+      .icon-6:before { content: "W"; }
+      .icon-7:before { content: "W"; }
+      .icon-8:before { content: "W"; }
+      .icon-9:before { content: "I"; }
+      .icon-10:before { content: "W"; }
+      .icon-11:before { content: "I"; }
+      .icon-12:before { content: "I"; }
+      .icon-13:before { content: "I"; }
+      .icon-14:before { content: "I"; }
+      .icon-15:before { content: "W"; }
+      .icon-16:before { content: "I"; }
+      .icon-17:before { content: "W"; }
+      .icon-18:before { content: "U"; }
+      .icon-19:before { content: "Z"; }
+      .icon-20:before { content: "Z"; }
+      .icon-21:before { content: "Z"; }
+      .icon-22:before { content: "Z"; }
+      .icon-23:before { content: "Z"; }
+      .icon-24:before { content: "E"; }
+      .icon-25:before { content: "E"; }
+      .icon-26:before { content: "3"; }
+      .icon-27:before { content: "a"; }
+      .icon-28:before { content: "A"; }
+      .icon-29:before { content: "a"; }
+      .icon-30:before { content: "A"; }
+      .icon-31:before { content: "6"; }
+      .icon-32:before { content: "1"; }
+      .icon-33:before { content: "6"; }
+      .icon-34:before { content: "1"; }
+      .icon-35:before { content: "W"; }
+      .icon-36:before { content: "1"; }
+      .icon-37:before { content: "S"; }
+      .icon-38:before { content: "S"; }
+      .icon-39:before { content: "S"; }
+      .icon-40:before { content: "M"; }
+      .icon-41:before { content: "W"; }
+      .icon-42:before { content: "I"; }
+      .icon-43:before { content: "W"; }
+      .icon-44:before { content: "a"; }
+      .icon-45:before { content: "S"; }
+      .icon-46:before { content: "U"; }
+      .icon-47:before { content: "S"; }
+
+      html, body {
+        height:100%;
+        width:100%;
+        background:#000;
+        font-family: "omnes-pro", sans-serif;
+      }
+
+      #clock {
+        font-weight: 100;
+        font-size: 90px;
+        color:#fff;
+        max-width:300px;
+        margin:0 auto;
+        text-align: center;
+      }
+
+      #weather {
+        position: absolute;
+        left:0;
+        bottom:30px;
+        font-weight: 100;
+        color:#fff;
+        width:100%;
+        text-align: center; 
+      }
+
+      .condition {
+        font-size:24px;
+      }
+      .day {
+        font-size: 15px;
+        color:#aaa;
+      }
+      #icon {
+        font-size: 90px;
+        line-height: 80px;
+        font-style: normal !important;
+        font-family: 'Weather';
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="clock"></div>
+    <div id="weather">
+      <div id="icon"></div>
+      <div class="condition">
+        It's <span id="temp"></span>°C right now.
+      </div>
+      
+      <div class="day">
+      <span id="city"></span> is currently <span id="cur"></span>. High: <span id="high"></span>°C. &mdash; Low: <span id="low"></span>°C.
+      </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+    <script>
+      $(document).ready( function() {
+
+        function displayTime() {
+          var currentTime = new Date();
+          var hours = currentTime.getHours();
+          var minutes = currentTime.getMinutes();
+          var clockDiv = document.getElementById('clock');
+          if ( minutes < 10 ) {
+            minutes = '0' + minutes;
+          }
+          clockDiv.innerText = hours + ":" + minutes;
+        }
+
+        function updateWeather() {
+            $.simpleWeather({
+              location: 'ankara, turkey',
+              unit: 'c',
+              success: function(weather) {
+                console.log(weather);
+                $('#icon').html('<span class="icon-'+weather.code+'"></span>');
+                $('#city').html(weather.city);
+                $('#temp').html(weather.temp);
+                $('#cur').html(weather.currently);
+                $('#high').html(weather.forecast[0].high);
+                $('#low').html(weather.forecast[0].low);
+              },
+              error: function(error) {
+                $('#weather').html('<p>Whoops:'+error+'</p>');
+              }
+            });
+        }
+
+        displayTime();
+        updateWeather();
+        setInterval(displayTime, 1000);
+        setInterval(updateWeather, 60000);
+      });
+    </script>
+  </body>
+</html>
