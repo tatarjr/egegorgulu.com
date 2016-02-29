@@ -16,7 +16,7 @@ title: Ege Görgülü | Designer
 		<h1>Works</h1>
 		<ul class="grid list-unstyled">
 			{% for post in site.posts %}
-			<li class="grid_item item-{{ post.title }}">
+			<li class="grid_item item-{{ post.selector }}">
 				<a href="{{ post.url }}">
 					<h4>{{ post.title }}</h4>
 					<div class="grid_item_role">{{ post.role }}</div>

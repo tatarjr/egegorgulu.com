@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Before-After.js
+selector: beforeafter
 permalink: /works/beforeafterjs
-role: Front-End Development
-desc: Before-after.js is an image comparison slider built with Javascript.
+role: Front-End Development, Maintainer
+desc: Before-after.js is a responsive image comparison slider built with Javascript.
 ---
 
 # before-after.js
