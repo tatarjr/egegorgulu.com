@@ -6,20 +6,24 @@ title: Ege Görgülü | Designer
 
 <section class="container-fluid sect-hero">
 	<div class="sect-inner">
-		<h3 class="warmup">Hi. Welcome.</h3>
-		<p class="intro">Ege Gorgulu is a product designer and Director of Product Design at <a href="//jotform.com">JotForm</a>, currently living in Ankara.</p>
+		<div class="vert-align">
+			<p class="text-warmup">Hi! I'm Ege!</p>
+			<p class="text-lead">A full-stack designer with a keen<br> focus on business and a passion for<br> crafting delightful experiences.</p>
+			<p class="text">I’ve been designing and building digital products for over 6 years<br> now, getting involved in all aspects of it from Ideation and Validation<br> to User Research, Interaction Design and Front-End Development.</p>
+			<p class="text">Currently serving as Director of Product Design at JotForm with a<br> great team of developers and designers.</p>
+		</div>
 	</div>
 </section>
 
 <section class="container-fluid sect-works">
 	<div class="sect-inner">
-		<h1>Works</h1>
+		<h1>Selected Works</h1>
 		<ul class="grid list-unstyled">
 			{% for post in site.posts %}
 			<li class="grid_item item-{{ post.selector }}">
 				<a href="{{ post.url }}">
 					<h4>{{ post.title }}</h4>
-					<div class="grid_item_role">{{ post.role }}</div>
+					<div class="grid_item_type">{{ post.type }}</div>
 					<p class="grid_item_desc">{{ post.desc }}</p>
 				</a>
 			</li>

@@ -5,83 +5,141 @@ ul {
 .font-body() { font-family: "omnes-pro", sans-serif; }
 .font-accent() { font-family: "rooney-web", sans-serif; }
 .font-display() { font-family: "ff-market-web", cursive; }
-//.font-display2() { font-family: "flood-std", cursive; }
 
-body {
-  .font-body();
+@pink: #fe919f;
+@orange: #ffc19c;
+@gray: #999999;
+
+.vert-align {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
+
+// General
 
 a {
 	text-decoration: none;
+	color:@pink;
 	&:hover {
 		text-decoration: none;
+		background: @pink;
+		color:white;
 	}
 }
 
-h1 {
-	font-size:3em;
-	//text-transform: uppercase;
-	font-weight: 800;
-	.font-display();
-}
-
-p {
-	font-size: 18px;
-	font-weight: 300;
-	letter-spacing: 0.3px;
-}
+// Layout
 
 section {
 	position: relative;
 	z-index: 1;
 }
 
-.masthead {
+.sect-inner {
+	position: relative;
+	width:1024px;
+	max-width: 90%;
+	margin:0 auto;
+
+}
+
+.sect-hero {
+	background:#f5f5f5;
 	border-bottom: 1px solid #eee;
-	font-size: 18px;
+
+	.sect-inner {height: 95vh;}
+}
+
+// Typography
+
+body {
+  .font-body();
+}
+
+// p {
+// 	font-size: 18px;
+// 	font-weight: 300;
+// 	letter-spacing: 0.3px;
+// }
+
+
+.text {
+	font-size:24px;
+	line-height: 40px;
+
+	&-warmup {
+		.font-display();
+		color:@pink;
+		font-weight: 300;
+		font-size: 30px;
+		line-height: 30px;
+		transform: translate(-10px, -30px) rotate(-4deg);
+	}
+
+	&-lead{
+		.font-body();
+		font-weight: 700;
+		font-size: 42px;
+		//font-style: italic;
+		line-height: 54px;
+		margin-bottom: 36px;
+	}
+
+	& + & {
+		margin-top: 18px;
+	}
+}
+
+//Navigation
+
+.masthead {
 	position: fixed;
-	background: #fff;
-	z-index: 10;
 	top:0;
 	left: 0;
+	height:80px;
+	padding:15px 0;
+	z-index: 10;
+
+	border-bottom: 1px solid transparent;
 	width:100%;
-	.font-display();
 	.row {
 		margin:0;
 	}
 }
 
-.nav, .logo {
-	padding: 12px 0;
+.logo, .nav {
+	padding: 0 15px;
 }
 
-.sect-inner {
-	max-width:80%;
-	margin:0 auto;
-}
-.sect-hero {
-	height: 100vh;
-	background:#f5f5f5;
-	border-bottom: 1px solid #eee;
+.logo {
+	a {
+		display: inline-block;
+	}
+	span {
+		font-size:12px;
+		text-transform: uppercase;
+		margin-left:15px; 
+		line-height: 50px;
+		letter-spacing: 5px;
+		color:@orange;
+	}
+	img {
+		width:50px;
+		height:50px;
+		padding:10px;
+	}
 }
 
-.warmup {
-	//.font-accent();
+
+.nav {
+	text-align: right;
+	font-size:15px;
+	line-height: 50px;
 	color:#999;
-	font-weight: 300;
-	font-size: 15px;
 	letter-spacing: 1px;
-	text-transform: uppercase;
-	margin:180px 0 30px;
-}
-
-.intro {
-	.font-body();
-	font-weight: 600;
-	font-size: 36px;
-	font-style: italic;
-	line-height: 1.3em;
-	max-width: 80%;	
+	& > a {
+		margin:0 15px 0 30px;
+	}
 }
 
 
@@ -92,58 +150,57 @@ section {
 	list-style:none inside;
 }
 
+h1 {
+	.font-display();
+	font-size:3em;
+	text-align: center;
+}
+
 .grid_item {
-	background-color: #000;
+	width: 33%;
+	float: left;
+	padding: 0;
+	
 	background-repeat: no-repeat;
 	background-position: center center;
-	padding:0;
 
 	a {
-		display:block;
+		display: block;
+		padding: 30px 36px;
+		margin: 12px 0;
+		color: @gray;
+		text-align: center;
 		// background:#eee;
-		padding:30px 36px;
-		margin:12px 0;
-		color:inherit;
-		height: 80vh;
+		// height: 80vh;
 	}
 
 	h4 {
-		.font-accent();
-		font-weight: 700;
-		font-size: 30px;
+		.font-display();
+		color: @pink;
+		font-size: 24px;
 	}
 
-	&_role {
+	&_type {
 		font-size: 12px;
-		max-width: 40%;
-		margin:0 0 18px;
+		
+		margin: 0 0 18px;
 		text-transform: uppercase;
 	}
 
 	&_desc {
-		max-width: 40%;
+		// max-width: 84%;
+		margin:0 auto;
 	}
 }
 
 .item-beforeafter { 
-	background-image:url(beforeafter.gif); 
-	background-size: cover;
-	color:#fff;
+
 }
 .item-yekolay { 
-	background-image:url(yekolay-logo.png); 
-	background-color:#de2121;
 	
-	background-position: center center; 
-	color:#FDD7D7;
 }
 
 .item-pinata {
-	background-color: #bf4848;
-	background-image: url(pinata.png);
-	background-position: 600px 30px;
-	background-size: 375px 669px;
-	color:#fff;
 
 }
 
