@@ -5,7 +5,9 @@
 .font-display() { font-family: "ff-market-web", cursive; }
 
 @pink: #fe919f;
+@dark-pink: #483538;
 @orange: #ffc19c;
+@yellow: #f8a038;
 @gray: #999999;
 
 .vert-align {
@@ -35,15 +37,6 @@
 
 // General & Resets
 
-a {
-	text-decoration: none;
-	color:@pink;
-	&:hover {
-		text-decoration: none;
-		background: @pink;
-		color:white;
-	}
-}
 
 ul {
   margin:0;
@@ -86,48 +79,14 @@ section {
 	.sect-inner {height: 95vh;}
 }
 
-
-
-
-
-// Typography
-
-body {
-  .font-body();
+.sect-works {
+	z-index: 10;
+	padding: 90px 0;
 }
 
-// p {
-// 	font-size: 18px;
-// 	font-weight: 300;
-// 	letter-spacing: 0.3px;
-// }
-
-
-.text {
-	font-size:24px;
-	line-height: 40px;
-
-	&-warmup {
-		.font-display();
-		color:@pink;
-		font-weight: 300;
-		font-size: 30px;
-		line-height: 30px;
-		transform: translate(-10px, -30px) rotate(-4deg);
-	}
-
-	&-lead{
-		.font-body();
-		font-weight: 700;
-		font-size: 42px;
-		//font-style: italic;
-		line-height: 54px;
-		margin-bottom: 36px;
-	}
-
-	& + & {
-		margin-top: 18px;
-	}
+.footer {
+	padding:90px 0 120px;
+	//.sect-inner {height: 45vh;}
 }
 
 
@@ -193,6 +152,82 @@ body {
 		margin:0 15px 0 30px;
 	}
 }
+
+
+
+
+
+// Typography
+
+body {
+  .font-body();
+  color:@dark-pink;
+  font-size:15px;
+}
+
+// p {
+// 	font-size: 18px;
+// 	font-weight: 300;
+// 	letter-spacing: 0.3px;
+// }
+
+a {
+	text-decoration: none;
+	color:@yellow;
+	cursor: pointer;
+	transition:all 0.3s ease;
+	&:hover {
+		text-decoration: none;
+		background: @yellow;
+		color:white;
+	}
+}
+
+
+.text {
+
+	&-normal {
+		font-size:24px;
+		line-height: 40px;	
+	}
+
+	&-small {
+		font-size:18px;
+		line-height: 24px;
+	}
+	
+	&-warmup {
+		.font-display();
+		color:@pink;
+		font-weight: 300;
+		font-size: 30px;
+		line-height: 30px;
+		transform: translate(-10px, -30px) rotate(-4deg);
+	}
+
+	&-lead{
+		.font-body();
+		font-weight: 700;
+		font-size: 42px;
+		//font-style: italic;
+		line-height: 54px;
+		margin-bottom: 36px;
+	}
+
+	&-footer {
+		.font-display();
+		text-align: center;
+		font-size: 60px;
+		color:lighten(@pink, 15%);
+		font-weight: normal;
+		transform:rotate(-12deg);
+	}
+
+	& + & {
+		margin-top: 18px;
+	}
+}
+
 
 
 
