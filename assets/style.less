@@ -234,60 +234,83 @@ a {
 // Works list
 
 .grid {
-	list-style:none inside;
+	overflow: hidden;
+	//max-width: 900px;
+	//margin:0 auto;
 }
 
 h1 {
 	.font-display();
 	font-size:3em;
+	width:50%;
+	margin:0 auto;
+	font-weight: normal;
 	text-align: center;
+	padding:0 0 48px;
+	transform:rotate(-12deg);
 }
 
-.grid_item {
+.grid-item {
 	width: 33%;
 	float: left;
 	padding: 0;
+
 	
 	background-repeat: no-repeat;
 	background-position: center center;
-
+	background-size:inherit;
+	
 	a {
+		border:1px dashed transparent;
 		display: block;
-		padding: 30px 36px;
+		padding: 36px 36px 60px;
 		margin: 12px 0;
-		color: @gray;
 		text-align: center;
-		// background:#eee;
-		// height: 80vh;
+		transition:all 0.2s ease;
+		border-radius: 30px;
+		&:hover {
+			border:1px dashed lighten(@pink, 10%);
+			background-color: transparent;
+			box-shadow: 0 2px 3px lighten(@pink, 18%)
+		}
 	}
 
 	h4 {
 		.font-display();
 		color: @pink;
-		font-size: 24px;
+		margin:0;
+		font-size: 30px;
+		line-height: 1.5;
 	}
 
-	&_type {
+	&-type {
 		font-size: 12px;
-		
+		color:@dark-pink;
+		font-weight: 700;
 		margin: 0 0 18px;
 		text-transform: uppercase;
 	}
 
-	&_desc {
-		// max-width: 84%;
+	&-desc {
+		color:@dark-pink;
+		max-width: 90%;
 		margin:0 auto;
 	}
 }
 
 .item-beforeafter { 
-
+	background-image:url(/assets/item-bajs.png);
+	&:hover { background-size: 60%; }
 }
 .item-yekolay { 
-	
+	background-image:url(/assets/item-yekolay.png);
+	&:hover { background-size: 55%; }
 }
-
-.item-pinata {
-
+.item-pinata { 
+	background-image:url(/assets/item-pinata.png);
+	&:hover { background-size: 45%; }
 }
-
+.item-analytics { 
+	background-image:url(/assets/item-analytics.png);
+	&:hover { background-size: 85%; }
+}
