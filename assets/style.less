@@ -13,7 +13,22 @@
 	top: 50%;
 	transform: translateY(-50%);
 }
+.wave {
+	position: absolute;
+	left: 0;
+	width:100%;
+	display: block;
+	height: 36px;
 
+	&-top {
+		top: -36px;
+		background: url(/assets/wave-top.png) center bottom repeat-x;
+	}
+	&-bottom {
+		bottom:-36px;
+		background: url(/assets/wave-bottom.png) center top repeat-x;
+	}
+}
 
 
 
