@@ -2,4 +2,22 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var navSticky = false;
+			var stickyThreshold = 660;
+
+			$(document).scroll(function(){
+				var top = $('body').scrollTop();
+				if ( top > stickyThreshold && !navSticky ) {
+					navSticky = true;
+					$('.masthead').addClass('sticky');
+				}
+				if ( top < 1 && navSticky ) {
+					navSticky = false;
+					$('.masthead').removeClass('sticky');
+				}
+			})
+		});
+	</script>
 </html>
