@@ -4,7 +4,8 @@ title: Before-After.js
 selector: beforeafter
 permalink: /works/beforeafterjs
 role: Front-End Development, Maintainer
-desc: Before-after.js is a responsive image comparison slider built with Javascript.
+type: jQuery Plugin
+desc: A fully responsive image comparison slider.
 ---
 
 # before-after.js

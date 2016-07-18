@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Jotform Form Analytics
+title: Form Analytics
 permalink: /works/:title
 role: UI Design, Front-End Development, Information Architecture, Interaction Design
-desc: Form Analytics, as the name suggests, is a monitoring tool to measure the performance of your JotForm forms.
+type: Web App
+desc: Tracks form performance by providing key stats.
 ---
 
 # Jotform Form Analytics
