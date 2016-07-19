@@ -6,8 +6,7 @@ permalink: /works/various
 role: Designer
 type: Various
 desc: Icons, badges and illustrations from various projects.
+cover: bg.jpg
 ---
-
-# All the Small Things
 
 Here's a selection from studies.

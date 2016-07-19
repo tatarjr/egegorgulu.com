@@ -6,9 +6,8 @@ permalink: /works/:title
 role: UI Design, Front-End Development, Information Architecture, Interaction Design
 type: Web App
 desc: Tracks form performance by providing key stats.
+cover: bg.jpg
 ---
-
-# Jotform Form Analytics
 
 The Form Analytics project was a thorn in our sides for quite a while. All our competitors had similar functionality and we were behind the competition. We set out to right that wrong, and the result was this:
 
