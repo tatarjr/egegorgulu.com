@@ -76,6 +76,8 @@ section {
 	max-width: 90%;
 	margin:0 auto;
 
+	.post-header &, 
+	.post-content & { width:720px; }
 }
 
 .sect-hero {
@@ -329,4 +331,27 @@ h1 {
 .item-analytics { 
 	background-image:url(/assets/item-analytics.png);
 	&:hover { background-size: 85%; }
+}
+
+
+
+
+
+.post-header {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	padding: 30vh 0 1vh;
+	background-color:#fafafa;
+	text-align: center;
+	.text-h1 {
+		color:@pink;
+	}
+}
+
+.post-content {
+	padding:90px;
+	p {
+		&:extend(.text-normal);
+	}
 }
