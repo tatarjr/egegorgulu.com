@@ -1,8 +1,11 @@
 // Variables & Mixins
 
 .font-body() { font-family: "omnes-pro", sans-serif; }
-.font-accent() { font-family: "rooney-web", sans-serif; }
-.font-display() { font-family: "ff-market-web", cursive; }
+.font-display() { font-family: "ff-market-web", cursive;
+	-moz-font-feature-settings: "ss08";
+	-webkit-font-feature-settings: "ss08";
+	font-feature-settings: "ss08";
+}
 
 @pink: #fe919f;
 @dark-pink: #483538;
@@ -16,16 +19,14 @@
 	transform: translateY(-51%);
 }
 
-.rotate {
-	transform: rotate(-12deg);
-	display: inline-block;
-}
+.rotate6 { transform: rotate(-6deg); display: inline-block; }
+.rotate12 { transform: rotate(-12deg); display: inline-block; }
 
 .wave {
+	display: block;
 	position: absolute;
 	left: 0;
 	width:100%;
-	display: block;
 	height: 36px;
 
 	&-top {
@@ -48,17 +49,18 @@ ul {
   margin:0;
 }
 
-html {
+p, h1, h2, h3, h4, h5, h6, span, a {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.wf-active,
+.wf-error {
 	p, h1, h2, h3, h4, h5, h6, span, a {
-		opacity: 0;
-		transition: opacity 0.3s ease;
-	}
-	&.wf-active,&.wf-error {
-		p, h1, h2, h3, h4, h5, h6, span, a {
-			opacity: 1;
-		}
+		opacity: 1;
 	}
 }
+
 
 
 
@@ -194,59 +196,66 @@ a {
 	}
 }
 
-.text-normal {
-	font-size:24px;
-	line-height: 40px;	
-}
+.text-tiny { font-size: 12px; line-height: 18px; }
+.text-small { font-size:18px; line-height: 30px; }
+.text-normal { font-size:24px; line-height: 40px; }
+.text-large { font-size: 32px; line-height: 42px; }
+.text-big { font-size: 42px; line-height: 54px; }
 
-.text-small {
-	font-size:18px;
-	line-height: 24px;
-}
+.script-small { .font-display(); font-size: 20px; line-height: 25px; .text-regular(); }
+.script-normal { .font-display(); font-size: 30px; line-height: 35px; .text-regular(); }
+.script-big { .font-display(); font-size: 45px; line-height: 50px; .text-regular(); }
 
-.text-tiny {
-	font-size: 12px;
-	line-height: 18px;
-}
+.text-light() { font-weight: 300; }
+.text-regular() { font-weight: 400; }
+.text-medium() { font-weight: 500; }
+.text-bold() { font-weight: 700; }
+.text-black() { font-weight: 900; }
 
-.text-big {
-	font-size: 42px;
-	line-height: 54px;
-}
+.text-center() { text-align: center; }
 
 .text-warmup {
-	.font-display();
+	&:extend(.script-normal);
 	color:@pink;
-	font-weight: 300;
-	font-size: 30px;
-	line-height: 30px;
-	transform: translate(-10px, -30px) rotate(-4deg);
 }
 
 .text-lead{
 	&:extend(.text-big);
-	.font-body();
-	font-weight: 700;
+	.text-bold();
 	margin-bottom: 36px;
 }
 
 .text-footer {
 	.font-display();
-	text-align: center;
+	.text-center();
 	font-size: 60px;
 	color:lighten(@pink, 15%);
-	font-weight: normal;
-	transform:rotate(-12deg);
 }
 
 .text-type {
 	&:extend(.text-tiny);
-	font-weight: 700;
+	.text-bold();
+
 	text-transform: uppercase;
 	color:@dark-pink;
 }
 
-.text + .text {
+.text-sect-header {
+	&:extend(.script-big);
+	.text-center();
+	
+	margin:0 auto;
+	padding:0 0 48px;
+}
+
+.text-item-header {
+	.script-normal();
+	color: @pink;
+	margin:0;
+}
+
+.text-small + .text-small,
+.text-normal + .text-normal {
 	margin-top: 18px;
 }
 
@@ -257,18 +266,6 @@ a {
 
 .grid {
 	overflow: hidden;
-	//max-width: 900px;
-	//margin:0 auto;
-}
-
-h1 {
-	.font-display();
-	font-size:3em;
-	width:50%;
-	margin:0 auto;
-	font-weight: normal;
-	text-align: center;
-	padding:0 0 48px;
 }
 
 .grid-item {
@@ -282,11 +279,11 @@ h1 {
 	background-size:inherit;
 	
 	a {
-		border:1px dashed transparent;
 		display: block;
 		padding: 36px 36px 60px;
 		margin: 12px 0;
-		text-align: center;
+		.text-center();
+		border:1px dashed transparent;
 		transition:all 0.2s ease;
 		border-radius: 30px;
 		&:hover {
@@ -294,14 +291,6 @@ h1 {
 			background-color: transparent;
 			box-shadow: 0 2px 3px lighten(@pink, 18%)
 		}
-	}
-
-	h4 {
-		.font-display();
-		color: @pink;
-		margin:0;
-		font-size: 30px;
-		line-height: 1.5;
 	}
 
 
@@ -337,6 +326,8 @@ h1 {
 
 
 
+// Post Styling
+
 .post-header {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -344,7 +335,7 @@ h1 {
 	padding: 30vh 0 1vh;
 	background-color:#fafafa;
 	text-align: center;
-	.text-h1 {
+	.text-sect-header {
 		color:@pink;
 	}
 }
@@ -354,4 +345,20 @@ h1 {
 	p {
 		&:extend(.text-normal);
 	}
+}
+
+.resume-content {
+	h2 { color: @pink; }
+	h3 { &:extend(.text-normal); }
+	h4 { 
+		color:@yellow;
+		&:extend(.text-small); 
+		.text-date { 
+			color: @gray;
+			margin-left: 18px;
+		}
+	}
+	p{ &:extend(.text-small); }
+	main li { margin-bottom: 48px;}
+	aside > div { margin-bottom: 48px;}
 }
