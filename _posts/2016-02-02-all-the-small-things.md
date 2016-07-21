@@ -1,6 +1,7 @@
 ---
 layout: post
-title: All the Small Things
+title: Various Works — Ege Gorgulu
+prettyTitle: All the Small Things
 selector: smallthings
 permalink: /works/various
 role: Designer

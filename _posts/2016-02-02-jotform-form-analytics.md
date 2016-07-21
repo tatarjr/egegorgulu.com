@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Form Analytics
+title: Form Analytics Case Study - Ege Gorgulu
+prettyTitle: Form Analytics
 selector: analytics
 permalink: /works/:title
 role: UI Design, Front-End Development, Information Architecture, Interaction Design

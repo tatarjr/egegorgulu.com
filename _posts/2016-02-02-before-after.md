@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Before-After.js
+title: Before-After.js — Ege Gorgulu
+prettyTitle: Before-After.js
 selector: beforeafter
 permalink: /works/beforeafterjs
 role: Front-End Development, Maintainer
