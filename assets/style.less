@@ -354,11 +354,11 @@ a {
 	h2 { color: @pink; }
 	h3 { &:extend(.text-large); .font-medium(); margin:0;}
 	h4 { 
-		color:@orange;
-		margin:0 0 12px;
-		//color: @gray;
 		.font-regular();
 		&:extend(.text-small); 
+		color:@dark-pink;
+		margin:0 0 12px;
+
 		.text-date { 
 			margin-left: 18px;
 		}
@@ -366,4 +366,10 @@ a {
 	p{ &:extend(.text-small); }
 	main li { margin-bottom: 48px;}
 	aside > div { margin-bottom: 48px;}
+}
+
+.resume-content aside {
+	h3 { &:extend(.text-small); }
+	h4 { &:extend(.text-tiny); }
+	p { &:extend(.text-tiny); }
 }
