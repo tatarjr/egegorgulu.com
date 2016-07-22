@@ -169,6 +169,7 @@ section {
 
 .nav {
 	text-align: right;
+	.text-light();
 	font-size:15px;
 	line-height: 50px;
 	color:#999;
@@ -347,14 +348,18 @@ a {
 	}
 }
 
+
+// Resume Styling
+
 .resume-content {
 	h2 { color: @pink; }
-	h3 { &:extend(.text-normal); }
+	h3 { &:extend(.text-large); .text-medium(); margin:0;}
 	h4 { 
-		color:@yellow;
+		color:@orange;
+		margin:0 0 12px;
+		//color: @gray;
 		&:extend(.text-small); 
 		.text-date { 
-			color: @gray;
 			margin-left: 18px;
 		}
 	}
