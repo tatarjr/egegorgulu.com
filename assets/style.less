@@ -289,6 +289,7 @@ a {
 	width: 33%;
 	float: left;
 	padding: 0;
+	position: relative;
 
 	
 	background-repeat: no-repeat;
@@ -298,10 +299,10 @@ a {
 	a {
 		display: block;
 		padding: 36px 36px 48px;
-		margin: 12px 0;
+		margin: 0;
 		.text-center();
 		border:1px dashed transparent;
-		transition:all 0.2s ease;
+		transition:all 0.5s ease;
 		border-radius: 30px;
 		&:hover {
 			border:1px dashed lighten(@pink, 10%);
@@ -310,6 +311,14 @@ a {
 		}
 	}
 
+	&-img {
+		position: absolute;
+		top: 50%;
+		left:50%;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+		transition:transform 0.3s ease;
+	}
 
 	&-type {
 		margin: 0 0 18px;
@@ -322,21 +331,17 @@ a {
 	}
 }
 
-.item-beforeafter { 
-	background-image:url(/assets/item-bajs.png);
-	&:hover { background-size: 60%; }
+.item-beforeafter:hover .grid-item-img { 
+	transform: translate(-50%, -50%) rotate(12deg) scale(1.2);
 }
-.item-yekolay { 
-	background-image:url(/assets/item-yekolay.png);
-	&:hover { background-size: 55%; }
+.item-yekolay:hover .grid-item-img { 
+	transform: translate(-50%, -55%) rotate(-12deg) scale(1.2);
 }
-.item-pinata { 
-	background-image:url(/assets/item-pinata.png);
-	&:hover { background-size: 45%; }
+.item-pinata:hover .grid-item-img { 
+	transform: translate(-50%, -55%) rotate(12deg) scale(1.2);
 }
-.item-analytics { 
-	background-image:url(/assets/item-analytics.png);
-	&:hover { background-size: 85%; }
+.item-analytics:hover .grid-item-img { 
+	transform: translate(-50%, -50%) scale(1.2);
 }
 
 

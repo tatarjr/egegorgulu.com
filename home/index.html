@@ -19,14 +19,15 @@ selector: home
 <section class="container-fluid sect-works">
 	<div class="wave wave-top"></div>
 	<div class="sect-inner">
-		<h1 class="text text-sect-header"><span class="rotate12">Here's some of my<br> recent works.</span></h1>
+		<h1 class="text-sect-header"><span class="rotate12">Here's some of my<br> recent works.</span></h1>
 		<ul class="grid list-unstyled">
 			{% for post in site.posts %}
 			<li class="grid-item item-{{ post.selector }}">
 				<a href="{{ post.url }}">
-					<h4 class="text text-item-header">{{ post.prettyTitle }}</h4>
-					<p class="text text-type grid-item-type">{{ post.type }}</p>
-					<p class="text text-small grid-item-desc">{{ post.desc }}</p>
+					<img class="grid-item-img" src="/assets/item-{{post.selector}}.png">
+					<h4 class="text-item-header">{{ post.prettyTitle }}</h4>
+					<p class="text-type grid-item-type">{{ post.type }}</p>
+					<p class="text-small grid-item-desc">{{ post.desc }}</p>
 				</a>
 			</li>
 			{% endfor %}
