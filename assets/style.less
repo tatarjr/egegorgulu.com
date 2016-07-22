@@ -171,7 +171,7 @@ section {
 
 .nav {
 	text-align: right;
-	.text-light();
+	.font-light();
 	font-size:15px;
 	line-height: 50px;
 	color:#999;
@@ -211,21 +211,23 @@ a {
 	}
 }
 
-.text-tiny { font-size: 12px; line-height: 18px; }
+.text-micro { font-size: 12px; line-height: 18px; }
+.text-tiny { font-size: 15px; line-height: 24px; }
 .text-small { font-size:18px; line-height: 30px; }
 .text-normal { font-size:24px; line-height: 40px; }
 .text-large { font-size: 32px; line-height: 42px; }
-.text-big { font-size: 42px; line-height: 54px; }
+.text-big { font-size: 36px; line-height: 48px; }
+.text-macro { font-size: 42px; line-height: 54px; }
 
-.script-small { .font-display(); font-size: 20px; line-height: 25px; .text-regular(); }
-.script-normal { .font-display(); font-size: 30px; line-height: 35px; .text-regular(); }
-.script-big { .font-display(); font-size: 45px; line-height: 50px; .text-regular(); }
+.script-small { .font-display(); font-size: 20px; line-height: 25px; .font-regular(); }
+.script-normal { .font-display(); font-size: 30px; line-height: 35px; .font-regular(); }
+.script-big { .font-display(); font-size: 45px; line-height: 50px; .font-regular(); }
 
-.text-light() { font-weight: 300; }
-.text-regular() { font-weight: 400; }
-.text-medium() { font-weight: 500; }
-.text-bold() { font-weight: 700; }
-.text-black() { font-weight: 900; }
+.font-light() { font-weight: 300; }
+.font-regular() { font-weight: 400; }
+.font-medium() { font-weight: 500; }
+.font-bold() { font-weight: 700; }
+.font-black() { font-weight: 900; }
 
 .text-center() { text-align: center; }
 
@@ -235,8 +237,8 @@ a {
 }
 
 .text-lead{
-	&:extend(.text-big);
-	.text-bold();
+	&:extend(.text-macro);
+	.font-bold();
 	margin-bottom: 36px;
 }
 
@@ -248,8 +250,8 @@ a {
 }
 
 .text-type {
-	&:extend(.text-tiny);
-	.text-bold();
+	&:extend(.text-micro);
+	.font-bold();
 
 	text-transform: uppercase;
 	color:@dark-pink;
@@ -355,11 +357,12 @@ a {
 
 .resume-content {
 	h2 { color: @pink; }
-	h3 { &:extend(.text-large); .text-medium(); margin:0;}
+	h3 { &:extend(.text-large); .font-medium(); margin:0;}
 	h4 { 
 		color:@orange;
 		margin:0 0 12px;
 		//color: @gray;
+		.font-regular();
 		&:extend(.text-small); 
 		.text-date { 
 			margin-left: 18px;
