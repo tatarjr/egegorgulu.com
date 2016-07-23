@@ -29,12 +29,26 @@
 
 	&-top {
 		top: -36px;
+		animation: wave-top 45s ease-in-out infinite alternate;
 		background: url(/assets/wave-top.png) center bottom repeat-x;
 	}
 	&-bottom {
 		bottom:-36px;
+		animation: wave-bottom 45s ease-in-out infinite alternate;
 		background: url(/assets/wave-bottom.png) center top repeat-x;
 	}
+}
+
+@keyframes wave-top {
+	0% { background-position: 0 bottom; }
+	50% { background-position: 5000% bottom; }
+	100% { background-position: 0 bottom; }
+}
+
+@keyframes wave-bottom {
+	0% { background-position: 0 top; }
+	50% { background-position: -5000% top; }
+	100% { background-position: 0 top; }
 }
 
 
