@@ -102,7 +102,7 @@ section {
 }
 
 .footer {
-	padding:90px 0 120px;
+	padding:90px 0 60px;
 	//.sect-inner {height: 45vh;}
 }
 
@@ -230,9 +230,10 @@ a {
 
 .text-footer {
 	.font-display();
-	.text-center();
+	//.text-center();
+	float: right;
 	font-size: 60px;
-	color:lighten(@pink, 15%);
+	color:@dark-pink;
 }
 
 .text-type {
@@ -408,4 +409,11 @@ a {
 		}
 	}
 }
+
+.footer {
+	.text-small { color:@gray; }
+}
+
 .sep {.font-display(); color:@gray;margin:0 6px;}
+
+
