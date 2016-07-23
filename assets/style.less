@@ -262,9 +262,15 @@ a {
 	&:extend(.script-big);
 	.text-center();
 	color:@dark-pink;
+	//text-shadow: 0 0 30px @pink;
 	
 	margin:0 auto;
-	padding:0 0 48px;
+	padding:6px 0 36px;
+	.sect-hero-mini & {
+		&:extend(.script-normal);
+		color:@yellow;
+		padding:18px 0 36px;
+	}
 }
 
 .text-item-header {
