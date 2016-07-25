@@ -415,9 +415,27 @@ a {
 // Post Styling
 
 .post-content {
-	padding:60px 0;
+	padding:60px 0 90px;
+
+	h1 {
+		&:extend(.text-macro);
+		.font-bold();
+		.text-center;
+		//color:@pink;
+	}
+	h2 {
+		&:extend(.script-small);
+		.text-center;
+		color:@gray;
+		margin:-6px 0 36px;
+	}
 	p {
 		&:extend(.text-normal);
+		margin-bottom: 18px;
+	}
+	img {
+		width:100%;
+		margin: 24px 0;
 	}
 }
 
