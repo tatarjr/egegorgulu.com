@@ -4,8 +4,15 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 
 ### TODO
 - Complete Case studies
+	- ~~beforeafter~~
+	- yekolay
+	- pinata
+	- Form Analytics
+	- Jobspot
+	- All the small things
 - Works section 
 	- ~~Add missing graphics to the list~~
+	- Move to seperate page? or scroll indicator?
 	- Add more work?
 		- Theme Store
 		- Jotform V4 and assets
@@ -17,6 +24,7 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 - Wave effect convert to absolute
 - Try buttons under works list
 - Visited/focus states for links
+- https connection refused?
 
 ### DONE
 - ~~Design Footer~~
