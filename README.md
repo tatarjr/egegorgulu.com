@@ -16,6 +16,7 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 - Convert images to SVG
 - Wave effect convert to absolute
 - Try buttons under works list
+- Visited/focus states for links
 
 ### DONE
 - ~~Design Footer~~
