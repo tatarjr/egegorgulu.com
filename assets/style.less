@@ -421,6 +421,60 @@ a {
 	}
 }
 
+.post-actions {
+	.text-center;
+}
+
+
+
+
+
+// Overkill buttons
+
+.butt {
+	&:extend(.text-small);
+	padding: 9px 24px 12px;
+	border-radius: 6px;
+	margin: 30px 0 0;
+	display: inline-block;
+	overflow: hidden;
+	&:after {
+		bottom:50%;
+		transform: translate(-50%, 50%) scale(0);
+		z-index: -1;
+		border-radius: 50%;
+		transition:all 0.5s ease;
+		width:110%;
+		height: 0;
+		padding-bottom:154%; // dont ask 
+	}
+
+	&.butt-pri {
+		margin-right: 18px;
+		color:@yellow;
+		border: 1px solid lighten(@yellow, 10%);
+		&:after { background: @yellow; }
+	}
+
+	&.butt-sec {
+		color:@gray;
+		border: 1px solid lighten(@gray, 10%);
+		&:after { background: @gray; }
+	}
+
+	&.butt-pri:hover{ color:white; border-color:@yellow;}
+	&.butt-sec:hover{ color:white; border-color:@gray;}
+
+	&:hover:after {
+		// width:180px;
+		// height:180px;
+		width:110%;
+		transform: translate(-50%, 50%) scale(1);
+	}
+}
+
+
+
 
 // Resume Styling
 

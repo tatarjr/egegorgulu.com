@@ -23,3 +23,8 @@ Adobe FormsCentral was shutting down and we had built this great import tool tha
 Thus, before-after.js was born. 
 
 I've also written a short article on JotForm's Medium channel about it, explaining how single decision was made along the way.
+
+<div class="post-actions">
+	<a href="https://medium.com/jotform-form-builder/making-a-responsive-image-comparison-slider-in-css-and-javascript-f3a691a9dd71" class="butt butt-pri" target="_blank">Read the article</a>
+	<a href="https://github.com/jotform/before-after.js" class="butt butt-sec" target="_blank">GitHub Repo</a>
+</div>
