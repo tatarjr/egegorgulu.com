@@ -430,13 +430,21 @@ a {
 		color:@gray;
 		margin:-6px 0 36px;
 	}
+	h3 {
+		&:extend(.text-large);
+		.font-light;
+		color:@pink;
+		margin: 36px 0 18px;
+		//text-transform: uppercase;
+	}
 	p {
 		&:extend(.text-normal);
 		margin-bottom: 18px;
 	}
 	img {
-		width:100%;
-		margin: 24px 0;
+		width:120%;
+		margin: 24px 0 24px -10%;
+		border:5px solid #f5f5f5;
 	}
 }
 
@@ -465,7 +473,7 @@ a {
 		transition:all 0.5s ease;
 		width:110%;
 		height: 0;
-		padding-bottom:154%; // dont ask 
+		padding-bottom:154.375%; // this somehow doesnt get perfect circles, close enough for now. 
 	}
 
 	&.butt-pri {
