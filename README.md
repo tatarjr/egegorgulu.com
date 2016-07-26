@@ -5,7 +5,8 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 ### TODO
 - Complete Case studies
 	- ~~beforeafter~~
-	- yekolay
+	- yekolay (90%)
+		- Add other pages in and implement page switcher
 	- pinata
 	- Form Analytics
 	- Jobspot
