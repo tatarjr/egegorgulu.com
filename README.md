@@ -7,10 +7,11 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 	- ~~beforeafter~~
 	- yekolay (90%)
 		- Add other pages in and implement page switcher
+		- Wireframes? (maybe later)
 	- pinata
 	- Form Analytics
 	- Jobspot
-	- All the small things
+	- ~~All the small things~~
 - Works section 
 	- ~~Add missing graphics to the list~~
 	- Move to seperate page? or scroll indicator?
@@ -26,6 +27,7 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 - Try buttons under works list
 - Visited/focus states for links
 - https connection refused?
+- Add Google analytics
 
 ### DONE
 - ~~Design Footer~~

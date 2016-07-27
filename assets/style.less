@@ -616,3 +616,40 @@ a {
 	}
 	img {width: 100%; margin:0; border:none;}
 }
+
+img.captioned {
+	border:none;
+	margin: 48px 0 0 -10%;
+}
+
+.caption {
+	.text-center;
+	.text-tiny;
+	color:@gray;
+	display: block;
+	font-style: italic;
+	margin:24px 0 48px;
+}
+
+.wide-cont {
+	width:120%;
+	margin: 24px 0 0 -10%;
+	overflow: hidden;
+	&.even img { 
+		float: left;
+		width: 48.5%; 
+		border:none; 
+		margin:0;
+		&:first-child {
+			margin-right: 3%;
+		}
+	}
+
+	&.odd img {
+		float: left;
+		border:none; 
+		margin:0;
+		&:first-child {width:57.75%; margin-right: 3%;}
+		&:last-child {width:39.25%;}
+	}
+}
