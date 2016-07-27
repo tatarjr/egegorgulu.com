@@ -15,3 +15,17 @@
 	</section>
 </body>
 {% include footer.html %}
+{% if page.carousel %}
+<script>
+	$(document).ready(function(){
+		$('.browser-switcher a').click(function(){
+			var s = $(this).attr('data-target');
+			console.log(s);
+			$('.browser-switcher a').removeClass('active');
+			$(this).addClass('active');
+			$('#stage').attr('src', s);
+			$('.browser-stage div').scrollTop(0);
+		})
+	});
+</script>
+{% endif %}
