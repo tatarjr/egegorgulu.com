@@ -5,9 +5,9 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 ### TODO
 - Complete Case studies
 	- ~~beforeafter~~
-	- yekolay (90%)
-		- Add other pages in and implement page switcher
-		- Wireframes? (maybe later)
+	- ~~yekolay~~
+		- ~~Add other pages in and implement page switcher~~
+		
 	- pinata
 	- Form Analytics
 	- Jobspot
@@ -28,6 +28,7 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 - Visited/focus states for links
 - https connection refused?
 - Add Google analytics
+- Yekolay Wireframes? (maybe later)
 
 ### DONE
 - ~~Design Footer~~
