@@ -4,13 +4,12 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 
 ### TODO
 - Complete Case studies
+	- Pinata
+	- Form Analytics
+	- Jobspot
 	- ~~beforeafter~~
 	- ~~yekolay~~
 		- ~~Add other pages in and implement page switcher~~
-		
-	- pinata
-	- Form Analytics
-	- Jobspot
 	- ~~All the small things~~
 - Works section 
 	- ~~Add missing graphics to the list~~
@@ -28,6 +27,7 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 - Visited/focus states for links
 - https connection refused?
 - Add Google analytics
+- Favicon
 - Yekolay Wireframes? (maybe later)
 
 ### DONE
