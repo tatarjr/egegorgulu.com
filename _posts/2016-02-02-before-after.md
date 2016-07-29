@@ -18,11 +18,11 @@ Before-After.js is a jQuery plugin that allows you to compare images with one an
 
 ![slider gif](/assets/img/beforeafter.gif)
 
-Adobe FormsCentral was shutting down and we had built this great import tool that could take an Adobe Form and put out an identical JotForm form… Unfortunately, the result was so similar that it was impossible to show a side-by-side comparison in our landing page.
+Adobe FormsCentral was shutting down and we had built this great import tool that could take an Adobe Form and put out an identical JotForm form. Unfortunately, the result was so identical that it was impossible to show a side-by-side comparison in our landing page.
 
-Thus, before-after.js was born. 
+Thus, before-after.js was born. I developed the original idea and implemented it as a basic function. We then went open-source and turned it into a jquery plugin with the help of our contributors. 
 
-I've also written a short article on JotForm's Medium channel about it, explaining how single decision was made along the way.
+I've also written a short article on JotForm's Medium channel about it, explaining how every decision was made along the way.
 
 <div class="post-actions">
 	<a href="https://medium.com/jotform-form-builder/making-a-responsive-image-comparison-slider-in-css-and-javascript-f3a691a9dd71" class="butt butt-pri" target="_blank">Read the article</a>
