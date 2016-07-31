@@ -10,6 +10,7 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 	- ~~beforeafter~~
 	- ~~yekolay~~
 		- ~~Add other pages in and implement page switcher~~
+		- ~~Wireframes~~
 	- ~~All the small things~~
 - Works section 
 	- ~~Add missing graphics to the list~~
@@ -25,10 +26,11 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 - Wave effect convert to absolute
 - Try buttons under works list
 - Visited/focus states for links
-- https connection refused?
 - Add Google analytics
 - Favicon
-- Yekolay Wireframes? (maybe later)
+- Nav Breadcrumbs
+- Update codepen texts
+- https connection refused?
 
 ### DONE
 - ~~Design Footer~~

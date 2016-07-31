@@ -608,6 +608,7 @@ a {
 		border-top: none;
 		padding-bottom: 56.25%;
 		position: relative;
+		cursor: ns-resize;
 		z-index: 1;
 		& > div {
 			position: absolute;
@@ -681,6 +682,8 @@ img.captioned {
 		cursor:zoom-in;
 		&:hover {border-color:@yellow;}
 	}
+
+	&.mobile a { max-height:195px; }
 	li { 
 		padding: 15px;
 		position: relative;
@@ -694,6 +697,122 @@ img.captioned {
 		border:none;
 	}
 }
+
+.contsa {
+	position: relative;
+}
+
+#iph {
+	width:400px;
+	position: relative;
+	z-index:10;
+	opacity: 0.3;
+}
+
+.iphone {
+	position: absolute;
+    left: -17px;
+    top: 80px;
+    width: 298px;
+    height: 610px;
+    background: #222;
+    z-index: 5;
+    border-radius: 42px;
+    border:5px solid #555;
+
+    .screen {
+		position: absolute;
+	    top: 11.667%;
+	    left: 4.865%;
+	    width: 90.28%;
+	    height: 76.667%;
+	    background: white;
+    }
+	.left-btns {
+		position: absolute;
+	    top: 72px;
+	    left: -8px;
+	    width: 3px;
+	    height: 26px;
+	    background: #555;
+	    border-radius: 3px 0 0 3px;
+
+
+	    &:before, &:after {
+		    position: absolute;
+		    content: '';
+		    top: 53px;
+		    left: 1px;
+		    width: 2px;
+		    height: 45px;
+		    background: #555;
+		    border-radius: 3px 0 0 3px;
+	    }
+
+	    &:after {
+	    	top: 109px;
+	    }
+	}
+	.right-btn {
+	    position: absolute;
+	    content: '';
+	    top: 125px;
+	    right: -7px;
+	    width: 2px;
+	    height: 45px;
+	    background: #555;
+	    border-radius: 0 3px 3px 0;
+	}
+
+	.home-btn {
+		    position: absolute;
+		    left: 50%;
+		    bottom: 12px;
+		    transform: translateX(-50%);
+		    border-radius: 50%;
+		    border: 2px solid #000;
+		    width: 15.63%;
+		    height: 7.5%;
+		    background: transparent;
+	}
+	.speaker {
+		position: absolute;
+	    top: 30px;
+	    left: 50%;
+	    width: 15.29%;
+	    height: 5px;
+	    border-radius: 10px;
+	    background: #000;
+	    transform: translateX(-50%);
+	    &:before {
+	    	position: absolute;
+	    	left: 50%;
+	    	top:-19px;
+	    	content:'';
+	    	width: 6px;
+	    	height: 6px;
+	    	background: #000;
+	    	border-radius: 50px;
+	    	transform: translateX(-50%);
+	    }
+	    &:after {
+		    position: absolute;
+		    left: -25px;
+		    top: -2px;
+		    content: '';
+		    width: 9px;
+		    height: 9px;
+		    background: #000;
+		    border-radius: 50px;
+		    transform: translateX(-50%);
+	    }	
+	}
+}
+
+
+
+
+
 
 
 
