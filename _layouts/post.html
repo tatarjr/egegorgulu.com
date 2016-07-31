@@ -20,11 +20,12 @@
 	$(document).ready(function(){
 		$('.browser-switcher a').click(function(){
 			var s = $(this).attr('data-target');
-			console.log(s);
+			var top = $('.browser').offset().top - 120;
 			$('.browser-switcher a').removeClass('active');
 			$(this).addClass('active');
+			$('.browser-stage div').animate({scrollTop:0});
+			$('body, html').animate({scrollTop: top});
 			$('#stage').attr('src', s);
-			$('.browser-stage div').scrollTop(0);
 		})
 	});
 </script>
