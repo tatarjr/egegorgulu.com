@@ -18,12 +18,14 @@
 {% if page.carousel %}
 <script>
 	$(document).ready(function(){
-		$('.browser-switcher a').click(function(){
+		$('.img-switcher a').click(function(){
 			var s = $(this).attr('data-target');
-			var top = $('.browser').offset().top - 120;
-			$('.browser-switcher a').removeClass('active');
+			var top = $('.viewer-cont').offset().top - 105;
+			$('.img-switcher a').removeClass('active');
 			$(this).addClass('active');
-			$('.browser-stage div').animate({scrollTop:0});
+			if ( $('.browser-stage div') ){
+				$('.browser-stage div').animate({scrollTop:0});
+			}
 			$('body, html').animate({scrollTop: top});
 			$('#stage').attr('src', s);
 		})
