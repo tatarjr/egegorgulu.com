@@ -16,7 +16,7 @@ cover: bg.jpg
 
 Before-After.js is a jQuery plugin that allows you to compare images with one another with the help of a slider inside a responsive container.  
 
-![slider gif](/assets/img/beforeafter.gif)
+<img class="captioned" src="/assets/img/beforeafter/beforeafter.gif"><span class="caption">See the live <a href="http://codepen.io/bamf/pen/jEpxOX" target="_blank">codepen demo.</a></span>
 
 Adobe FormsCentral was shutting down and we had built this great import tool that could take an Adobe Form and put out an identical JotForm form. Unfortunately, the result was so identical that it was impossible to show a side-by-side comparison in our landing page.
 
