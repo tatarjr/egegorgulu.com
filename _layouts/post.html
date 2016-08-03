@@ -23,12 +23,16 @@
 			var top = $('.viewer-cont').offset().top - 105;
 			$('.img-switcher a').removeClass('active');
 			$(this).addClass('active');
-			if ( $('.browser-stage div') ){
+			if ( $('.browser-stage div').hasClass('scroll-to-top') ){
 				$('.browser-stage div').animate({scrollTop:0});
 			}
 			$('body, html').animate({scrollTop: top});
 			$('#stage').attr('src', s);
-		})
+			$('.browser-init').remove();
+		});
+		$('.browser-init').click(function(){
+			$(this).remove();
+		});
 	});
 </script>
 {% endif %}

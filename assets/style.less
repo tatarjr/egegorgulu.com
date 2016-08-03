@@ -577,14 +577,50 @@ a {
 
 .sep {.font-display(); color:@gray;margin:0 6px;}
 
-
+@keyframes pump {
+	0% {transform:scale(0.9);}
+	100% {transform:scale(1);}
+}
 .browser {
 	width:120%;
 	//border:3px solid #eee;
 	margin: 60px 0 24px -10%;
 	border-radius: 9px;
 	box-shadow: 0 3px 2px #ccc;
+	&-init {
+		display: none;
+		position: absolute;
+		top:24px;
+		left:0;
+		right:0;
+		bottom:0;
+		background: rgba(0, 0, 0, 0.8);
+		z-index: 10;
+		border-radius: 0 0 9px 9px;
+		color:#fff;
+		cursor: pointer;
+		.text-center;
+		.text-small;
+		.vert-align {left: 25%;width:50%;}
+		.glyphicon {
+			font-size:48px;
+			display: inline-block;
+			height:90px;
+			width:90px;
+			line-height: 90px;
+			border-radius:50%;
+			margin-bottom: 12px;
+			text-indent: -3px;
+			border:2px solid #fff;
+			//transition:all 0.3s ease;
+		}
 
+		&:hover {
+			.glyphicon {
+				animation: pump 0.5s alternate infinite;
+			}
+		}
+	}
 	&-bar {
 		height:24px;
 		text-align: center;
