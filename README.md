@@ -4,9 +4,9 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 
 ### TODO
 - Complete Case studies
-	- Pinata
-	- Form Analytics
 	- Jobspot
+	- ~~Form Analytics~~
+	- ~~Pinata~~
 	- ~~beforeafter~~
 	- ~~yekolay~~
 		- ~~Add other pages in and implement page switcher~~
