@@ -17,7 +17,7 @@ imgPath: /assets/img/smallthings/
 
 Here's a collection of various icons, banners and illustrations I had the pleasure of working on throughout my career.
 
-<img class="captioned" src="{{ page.imgPath }}widgets.svg"><span class="caption">Widget icons from JotForm Form Widgets.</span>
+<img class="captioned" src="{{ page.imgPath }}widgets.svg" style="border:none;"><span class="caption">Widget icons from JotForm Form Widgets.</span>
 
 <div class="wide-cont even">
 	<img src="/assets/img/smallthings/jaime.svg">
