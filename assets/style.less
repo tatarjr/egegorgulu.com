@@ -287,15 +287,19 @@ a {
 
 .text-footer {
 	.font-display();
+	.text-center;
 	float: right;
 	font-size: 60px;
 	color:@dark-pink;
 	background-size: 120%;
+	span {position: relative;}
 	img {
 		position: absolute;
-		right: 50px;
+		left: 50%;
 		width: 120px;
 		top:0;
+		z-index: -1;
+		transform:rotate(12deg) translateX(-55%);
 	}
 }
 
@@ -362,6 +366,7 @@ a {
 		border:1px dashed transparent;
 		transition:all 0.3s ease;
 		border-radius: 30px;
+		position: relative;
 		&:after {display: none;}
 		&:hover {
 			border:1px dashed lighten(@yellow, 10%);
@@ -896,6 +901,26 @@ img.captioned {
 	.text-bio {
 		.text-small;
 	}
+
+	.grid-item {
+		width:50%;
+		a {padding:24px 18px 30px}
+	}
+	.sect-works {
+		padding:60px 0 30px;
+	}
+	.post-content {
+		padding: 30px 0; 
+	}
+	.resume-content { 
+		aside {
+			padding: 30px 45px 0 45px;
+		}
+	}
+	.browser, .gallery, .wide-cont, .post-content img {
+		width:100%;
+		margin-left: 0;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -909,5 +934,32 @@ img.captioned {
 	}
 	.text-bio {
 		.text-micro;
+	}	
+	.grid-item {
+		width:100%;
+		a {padding:18px 36px 24px}
 	}
+	.text-sect-header {
+		.script-normal();
+		padding:6px 0 54px;
+	}
+
+	.text-footer {
+		float: none;
+		padding:60px 0;
+	}
+	.post-content {
+		p { .text-small; }
+		h1 { .text-big; }
+	}
+	.resume-content { 
+		aside {
+			padding: 30px 0 0;
+			.text-center;
+		}
+		h3 { .text-normal; }
+		h4 { .text-tiny; }
+	}
+	.img-switcher {line-height: 2;}
+	.butt.butt-pri {margin-right: 0}
 }

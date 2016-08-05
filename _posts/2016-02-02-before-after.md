@@ -25,6 +25,6 @@ Thus, before-after.js was born. I developed the original idea and implemented it
 I've also written a short article on JotForm's Medium channel about it, explaining how every decision was made along the way.
 
 <div class="post-actions">
-	<a href="https://medium.com/jotform-form-builder/making-a-responsive-image-comparison-slider-in-css-and-javascript-f3a691a9dd71" class="butt butt-pri" target="_blank">Read the article</a>
+	<a href="https://medium.com/jotform-form-builder/making-a-responsive-image-comparison-slider-in-css-and-javascript-f3a691a9dd71" class="butt butt-pri" target="_blank">Read the article</a><br class="visible-xs">
 	<a href="https://github.com/jotform/before-after.js" class="butt butt-sec" target="_blank">GitHub Repo</a>
 </div>
