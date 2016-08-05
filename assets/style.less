@@ -166,7 +166,7 @@ section {
 			border-radius: 50%;
 			background: @yellow;
 		}
-		&:hover {
+		&:hover, &:focus {
 			//background-color: @yellow;
 			&:after {
 				width:100%;
@@ -247,7 +247,7 @@ a {
 		transform: translateX(-50%);
 		transition: all 0.3s ease;
 	}
-	&:hover {
+	&:hover, &:focus {
 		text-decoration: none;
 		//background: @yellow;
 		color:@orange;
@@ -376,7 +376,7 @@ a {
 		border-radius: 30px;
 		position: relative;
 		&:after {display: none;}
-		&:hover {
+		&:hover, &:focus {
 			border:1px dashed lighten(@yellow, 10%);
 			background-color: transparent;
 			//box-shadow: 0 2px 3px lighten(@pink, 18%);
@@ -511,10 +511,10 @@ a {
 		&:after { background: @gray; }
 	}
 
-	&.butt-pri:hover{ color:white; border-color:@yellow;}
-	&.butt-sec:hover{ color:white; border-color:@gray;}
+	&.butt-pri:hover,&.butt-pri:focus{ color:white; border-color:@yellow;}
+	&.butt-sec:hover,&.butt-sec:focus{ color:white; border-color:@gray;}
 
-	&:hover:after {
+	&:hover:after,&:focus:after {
 		// width:180px;
 		// height:180px;
 		width:110%;
@@ -737,7 +737,7 @@ img.captioned {
 		border:5px solid #f5f5f5;
 		overflow: hidden;
 		cursor:zoom-in;
-		&:hover {border-color:@yellow;}
+		&:hover,&:focus {border-color:@yellow;}
 	}
 
 	&.mobile a { max-height:195px; }
