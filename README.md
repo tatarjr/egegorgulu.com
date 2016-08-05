@@ -5,6 +5,7 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 ### TODO
 - Complete Case studies
 	- Jobspot
+	- Talk about user testing on some
 	- ~~Form Analytics~~
 	- ~~Pinata~~
 	- ~~beforeafter~~
@@ -22,17 +23,21 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 		- Wishbox?
 		- StatusSiren (censored)
 - Responsiveness
+	- Pinata article
+	- Home page text
+	- Footer links
 - Convert images to SVG
 - Wave effect convert to absolute
 - Try buttons under works list
-- Visited/focus states for links
-- Add Google analytics
-- Favicon
-- Nav Breadcrumbs
+- Update footer text
 - Update codepen texts
-- https connection refused?
 
 ### DONE
+
+- ~~Nav Breadcrumbs~~sw
+- ~~Focus states for links~~
+- ~~Favicon~~
+- ~~Add Google analytics~~
 - ~~Design Footer~~
 - ~~Design Resume~~
 	- ~~Page/Post headers~~
@@ -42,3 +47,4 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 - ~~Change work items hover effect~~
 - ~~Change text hover effect~~
 - ~~Fix page headers~~
+- ~~https connection refused?~~ Happens because no ssl certificate.
