@@ -15,9 +15,9 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 - Responsiveness
 	- Pinata article
 	- Scroll lag?
-	- Double click to link issue
 	- Home page text
 	- Footer links
+	- ~~Double tap to link issue~~
 - Convert images to SVG
 - Wave effect convert to absolute
 - Try buttons under works list
@@ -34,7 +34,7 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 		- ~~Add other pages in and implement page switcher~~
 		- ~~Wireframes~~
 	- ~~All the small things~~
-	- ~~Talk about user testing~
+	- ~~Talk about user testing~~
 - ~~Update footer text~~
 - ~~Nav Breadcrumbs~~sw
 - ~~Focus states for links~~
