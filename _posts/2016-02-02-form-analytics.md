@@ -71,6 +71,8 @@ Our main goal while designing this section was to enable our users to answer one
 
 ### Results
 
+We conducted a small usability study with 5 participants and discovered only minor issues which were fixed right away.
+
 The project received praise from a large number of customers, and was particularly well-receieved by our high-tier users.
 
 One certain customer was very surpised to see that even though most of his form traffic originates from US, his Canadian customers were more likely to complete the purchase.
