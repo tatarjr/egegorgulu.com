@@ -6,6 +6,7 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 - Works section 
 	- ~~Add missing graphics to the list~~
 	- Move to seperate page? or scroll indicator?
+	- Try buttons under works list
 	- Add more work?
 		- Theme Store
 		- Jotform V4 and assets
@@ -20,11 +21,11 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 	- ~~Double tap to link issue~~
 - Convert images to SVG
 - Wave effect convert to absolute
-- Try buttons under works list
 - Update codepen texts
-- Switch less to css
 
 ### DONE
+- ~~Switch less to css~~
+- ~~Move home to root~~
 - ~~Case Studies~~
 	- ~~Jobspot~~
 	- ~~Form Analytics~~
