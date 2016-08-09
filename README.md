@@ -3,16 +3,6 @@ egegorgulu.com
 Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I also keep track of my work here, please excuse the mess.
 
 ### TODO
-- Complete Case studies
-	- Jobspot
-	- Talk about user testing on some
-	- ~~Form Analytics~~
-	- ~~Pinata~~
-	- ~~beforeafter~~
-	- ~~yekolay~~
-		- ~~Add other pages in and implement page switcher~~
-		- ~~Wireframes~~
-	- ~~All the small things~~
 - Works section 
 	- ~~Add missing graphics to the list~~
 	- Move to seperate page? or scroll indicator?
@@ -24,16 +14,28 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 		- StatusSiren (censored)
 - Responsiveness
 	- Pinata article
+	- Scroll lag?
+	- Double click to link issue
 	- Home page text
 	- Footer links
 - Convert images to SVG
 - Wave effect convert to absolute
 - Try buttons under works list
-- Update footer text
 - Update codepen texts
+- Switch less to css
 
 ### DONE
-
+- ~~Case Studies~~
+	- ~~Jobspot~~
+	- ~~Form Analytics~~
+	- ~~Pinata~~
+	- ~~beforeafter~~
+	- ~~yekolay~~
+		- ~~Add other pages in and implement page switcher~~
+		- ~~Wireframes~~
+	- ~~All the small things~~
+	- ~~Talk about user testing~
+- ~~Update footer text~~
 - ~~Nav Breadcrumbs~~sw
 - ~~Focus states for links~~
 - ~~Favicon~~
