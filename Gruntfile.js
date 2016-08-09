@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
 	grunt.initConfig({
-	  
+        
 		jekyll : {                            
 	    	prod : {                         
 	      		src : '.',
@@ -20,13 +20,28 @@ module.exports = function(grunt) {
 	  				{ expand : true, cwd: '_site/', src : '**', dest : '/var/www/egegorgulu.com/' }
 	  			]
 	  		}
-		}
+		},
 
+        less: {
+            development: {
+                options: {
+                    paths: ["./assets"]
+                },
+                files: {"./assets/style.css": "./assets/style.less"}
+            },
+            production: {
+                options: {
+                    paths: ["./assets"]
+                },
+                files: {"./assets/style.css": "./assets/style.less"}
+            }
+        },        
 	});
 
-	grunt.loadNpmTasks('grunt-jekyll');
-	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-jekyll');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-less');
 
-	grunt.registerTask('default', ['jekyll', 'clean', 'copy']);
+	grunt.registerTask('default', ['less', 'jekyll', 'clean', 'copy']);
 };
