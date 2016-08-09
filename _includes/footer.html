@@ -41,6 +41,13 @@
 					$('.masthead').removeClass('sticky');
 				}
 			})
+
+			$('a').on('touchend', function(e) {
+				var el = $(this);
+				var link = el.attr('href');
+				var target = el.attr('target')
+				if (link && !target) {window.location = link;}
+			});
 		});
 	</script>
 </html>
