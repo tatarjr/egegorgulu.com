@@ -7,12 +7,7 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 	- ~~Add missing graphics to the list~~
 	- Move to seperate page? or scroll indicator?
 	- Try buttons under works list
-	- Add more work?
-		- Theme Store
-		- Jotform V4 and assets
-		- FC Importer?
-		- Wishbox?
-		- StatusSiren (censored)
+	- Add more work? ( Theme Store, Jotform V4 and assets, FC Importer?, Wishbox? )
 - Responsiveness
 	- Pinata article
 	- Scroll lag?
@@ -20,10 +15,10 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 	- Footer links
 	- ~~Double tap to link issue~~
 - Convert images to SVG
-- Wave effect convert to absolute
 - Update codepen texts
 
 ### DONE
+- ~~Wave effect convert to absolute~~
 - ~~Switch less to css~~
 - ~~Move home to root~~
 - ~~Case Studies~~

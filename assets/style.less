@@ -30,25 +30,25 @@
 
 	&-top {
 		top: -36px;
-		animation: wave-top 45s ease-in-out infinite alternate;
+		animation: wave-top 60s ease-in-out infinite alternate;
 		background: url(/assets/img/wave-top.png) center bottom repeat-x;
 	}
 	&-bottom {
 		bottom:-36px;
-		animation: wave-bottom 45s ease-in-out infinite alternate;
+		animation: wave-bottom 60s ease-in-out infinite alternate;
 		background: url(/assets/img/wave-bottom.png) center top repeat-x;
 	}
 }
 
 @keyframes wave-top {
 	0% { background-position: 0 bottom; }
-	50% { background-position: 5000% bottom; }
+	50% { background-position: 9999px bottom; }
 	100% { background-position: 0 bottom; }
 }
 
 @keyframes wave-bottom {
 	0% { background-position: 0 top; }
-	50% { background-position: -5000% top; }
+	50% { background-position: 9999px top; }
 	100% { background-position: 0 top; }
 }
 
