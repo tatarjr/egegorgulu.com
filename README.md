@@ -7,7 +7,6 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 	- Move to seperate page? or scroll indicator?
 	- Try buttons under works list
 	- Add more work? ( Theme Store, Jotform V4 and assets, FC Importer?, Wishbox? )
-	- ~~Add missing graphics to the list~~
 - Responsiveness
 	- Make img switcher consistent
 	- Improve hero text
@@ -16,6 +15,7 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 - Resume PDF?
 - Back to works links at the end of articles?
 - Convert images to SVG
+- Link images/img preview lightbox?
 
 
 ### DONE
@@ -43,6 +43,7 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 - ~~Nav Breadcrumbs~~sw
 - ~~Focus states for links~~
 - ~~Favicon~~
+- ~~Add missing graphics to the works list~~
 - ~~Add Google analytics~~
 - ~~Design Footer~~
 - ~~Design Resume~~
