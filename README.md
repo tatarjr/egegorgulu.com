@@ -10,9 +10,9 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 	- ~~Add missing graphics to the list~~
 - Responsiveness
 	- Mobile previewer
-	- Check Pinata & jobspot articles
 	- Home page text
 	- Footer links
+	- ~~Jobspot wireframes~~
 	- ~~Scroll lag?~~ vh on hero causes this
 	- ~~Disable double tap issue on works list~~
 	- ~~Double tap to link issue~~
