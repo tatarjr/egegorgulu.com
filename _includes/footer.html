@@ -42,7 +42,7 @@
 				}
 			})
 
-			$('a').on('touchend', function(e) {
+			$('a:not(.grid-item a)').on('touchend', function(e) {
 				var el = $(this);
 				var link = el.attr('href');
 				var target = el.attr('target')
