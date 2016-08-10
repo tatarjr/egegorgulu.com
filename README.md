@@ -4,18 +4,23 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 
 ### TODO
 - Works section 
-	- ~~Add missing graphics to the list~~
 	- Move to seperate page? or scroll indicator?
 	- Try buttons under works list
 	- Add more work? ( Theme Store, Jotform V4 and assets, FC Importer?, Wishbox? )
+	- ~~Add missing graphics to the list~~
 - Responsiveness
-	- Pinata article
-	- Scroll lag?
+	- Mobile previewer
+	- Check Pinata & jobspot articles
 	- Home page text
 	- Footer links
+	- ~~Scroll lag?~~ vh on hero causes this
+	- ~~Disable double tap issue on works list~~
 	- ~~Double tap to link issue~~
 - Convert images to SVG
+- Back to works links at the end of articles?
 - Update codepen texts
+- Resume PDF?
+
 
 ### DONE
 - ~~Wave effect convert to absolute~~
