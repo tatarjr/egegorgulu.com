@@ -23,6 +23,7 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 
 
 ### DONE
+- ~~Pinata Splash font issue~~
 - ~~Wave effect convert to absolute~~
 - ~~Switch less to css~~
 - ~~Move home to root~~
