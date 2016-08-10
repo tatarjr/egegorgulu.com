@@ -9,20 +9,22 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 	- Add more work? ( Theme Store, Jotform V4 and assets, FC Importer?, Wishbox? )
 	- ~~Add missing graphics to the list~~
 - Responsiveness
-	- Mobile previewer
-	- Home page text
-	- Footer links
+	- Make img switcher consistent
+	- Improve hero text
+	- Improve footer links
+- Update codepen texts
+- Resume PDF?
+- Back to works links at the end of articles?
+- Convert images to SVG
+
+
+### DONE
+- ~~Responsiveness~~
+	- ~~Mobile previewer~~
 	- ~~Jobspot wireframes~~
 	- ~~Scroll lag?~~ vh on hero causes this
 	- ~~Disable double tap issue on works list~~
 	- ~~Double tap to link issue~~
-- Convert images to SVG
-- Back to works links at the end of articles?
-- Update codepen texts
-- Resume PDF?
-
-
-### DONE
 - ~~Pinata Splash font issue~~
 - ~~Wave effect convert to absolute~~
 - ~~Switch less to css~~
