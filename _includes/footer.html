@@ -29,6 +29,15 @@
 		$(document).ready(function(){
 			var navSticky = false;
 			var stickyThreshold = 360;
+			function setHeroHeight(){
+				$(".sect-hero .sect-inner").height($(window).height());
+			}
+
+			setHeroHeight();
+			
+			$(window).resize(function(){
+				setHeroHeight();
+			});
 
 			$(document).scroll(function(){
 				var top = $('body').scrollTop();
