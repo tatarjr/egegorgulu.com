@@ -2,6 +2,7 @@
 
 .font-body() { font-family: "omnes-pro", sans-serif; }
 .font-display() { font-family: "ff-market-web", cursive; }
+.font-accent() { font-family: "flood-std", cursive; }
 
 @pink: #fe919f;
 //@dark-pink: #483538;
@@ -30,12 +31,12 @@
 
 	&-top {
 		top: -36px;
-		animation: wave-top 60s ease-in-out infinite alternate;
+		animation: wave-top 90s ease-in-out infinite alternate;
 		background: url(/assets/img/wave-top.png) center bottom repeat-x;
 	}
 	&-bottom {
 		bottom:-36px;
-		animation: wave-bottom 60s ease-in-out infinite alternate;
+		animation: wave-bottom 90s ease-in-out infinite alternate;
 		background: url(/assets/img/wave-bottom.png) center top repeat-x;
 	}
 }
@@ -303,10 +304,10 @@ a {
 }
 
 .text-footer {
-	.font-display();
+	.font-accent();
 	.text-center;
 	float: right;
-	font-size: 60px;
+	font-size: 48px;
 	color:@dark-pink;
 	background-size: 120%;
 	position: relative;
@@ -321,16 +322,8 @@ a {
 		width: 120px;
 		top:0;
 		z-index: -1;
-		transform: translate(-52%, -10%);
+		transform: translate(-52%, -20%);
 	}
-}
-
-.text-type {
-	&:extend(.text-micro);
-	.font-bold();
-	.text-center();
-	text-transform: uppercase;
-	color:@dark-pink;
 }
 
 .text-sect-header {
@@ -338,7 +331,7 @@ a {
 	.text-center();
 	color:@dark-pink;
 	//text-shadow: 0 0 30px @pink;
-	
+	span {.grad-text;}
 	margin:0 auto;
 	padding:6px 0 36px;
 	.sect-hero-mini & {
@@ -353,6 +346,14 @@ a {
 	color: @pink;
 	transition:all 0.3s ease;
 	margin:0;
+}
+
+.text-type {
+	&:extend(.text-micro);
+	.font-bold();
+	.text-center();
+	text-transform: uppercase;
+	color:@dark-pink;
 }
 
 .text-small + .text-small,
