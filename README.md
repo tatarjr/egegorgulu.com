@@ -4,12 +4,10 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 
 ### TODO
 - Works section 
-	- Move to seperate page? or scroll indicator?
-	- Try buttons under works list
+	- Move to seperate page?
 	- Add more work? ( Theme Store, Jotform V4 and assets, FC Importer?, Wishbox? )
 - Add strong tags to articles
 - Alt design for article headers
-- Scroll indicator on home
 - Responsiveness
 	- Make img switcher consistent
 	- Improve hero text
@@ -21,6 +19,8 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 
 
 ### DONE
+- ~~Try buttons under works list~~
+- ~~Scroll indicator on home~~ The waves work well enough.
 - ~~Resume PDF~~
 - ~~Responsiveness~~
 	- ~~Mobile previewer~~

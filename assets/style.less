@@ -331,7 +331,7 @@ a {
 	.text-center();
 	color:@dark-pink;
 	//text-shadow: 0 0 30px @pink;
-	span {.grad-text;}
+	span {.grad-text; padding:6px;}
 	margin:0 auto;
 	padding:6px 0 36px;
 	.sect-hero-mini & {
@@ -354,6 +354,9 @@ a {
 	.text-center();
 	text-transform: uppercase;
 	color:@dark-pink;
+	a:hover & {
+		opacity: 0;
+	}
 }
 
 .text-small + .text-small,
@@ -361,7 +364,19 @@ a {
 	margin-top: 18px;
 }
 
-
+.text-link {
+	&:extend(.text-micro);
+	.font-semi();
+	position: absolute;
+	top: 72px;
+	left: 50%;
+	text-transform: uppercase;
+	display: block;
+	color:@yellow;
+	opacity: 0 !important;
+	transform:translateX(-50%);
+	a:hover & {opacity: 1 !important;}
+}
 
 
 // Works list
