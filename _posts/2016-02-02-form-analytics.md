@@ -57,13 +57,13 @@ Our intention from the start was to make this a single page app, so we opted for
 
 ### The Design
 
-We wanted to avoid the classic pitfall of <strong>dashboards that provide too much data and end up confusing the user</strong> with visual clutter, so we opted for a single big chart that would change based on what the user wanted to see and made sure that the users was able to find what they were looking for.
+We wanted to avoid the classic pitfall of dashboards that provide too much data and end up confusing the user with visual clutter, so we opted for a single big chart that would change based on what the user wanted to see and made sure that the users was able to find what they were looking for.
 
-Following the responses and a few quick evaluation meetings about them, it was clear <strong>how pageviews, responses, conversion rates and time spent changes over time</strong> would have the most impact on improving our users success.
+Following the responses and a few quick evaluation meetings about them, it was clear <strong>how pageviews, responses, conversion rates and time spent changes over time</strong> would <strong>have the most impact</strong> on improving our users success.
 
 ![Stats Main]({{ page.imgPath }}main.png)
 
-We moved onto adding detailed metrics for each stat, offering an in-depth view with <strong>individual response details, devices used, referrers, browsers and locations</strong>. 
+We moved onto adding detailed metrics for each stat, offering an in-depth view with individual response details, devices used, referrers, browsers and locations. 
 
 Our main goal while designing this section was to enable our users to answer one question really well: <strong>"Who are my customers?"</strong>
 
@@ -75,7 +75,7 @@ We conducted a small usability study with 5 participants and discovered only min
 
 The project received praise from a large number of customers, and was particularly well-receieved by our high-tier users.
 
-One certain customer was very surpised to see that even though most of his form traffic originates from US, his Canadian customers were more likely to complete the purchase.
+One certain customer was very surpised to see that even though most of his form traffic originated from US, his Canadian customers were more likely to complete the purchase.
 
 By providing Form Analytics, we enabled our users to discover and address mission-critical issues for their business and hopefully helped them become better at what they do.
 
