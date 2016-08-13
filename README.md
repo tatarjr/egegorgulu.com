@@ -3,11 +3,11 @@ egegorgulu.com
 Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I also keep track of my work here, please excuse the mess.
 
 ### TODO
+- Add a photo of yourself
 - Works section 
 	- Move to seperate page?
 	- Add more work? ( Theme Store, Jotform V4 and assets, FC Importer?, Wishbox? )
-- Add strong tags to articles
-- Alt design for article headers
+- Alt design for article headers?
 - Responsiveness
 	- Make img switcher consistent
 	- Improve hero text
@@ -19,6 +19,7 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 
 
 ### DONE
+- ~~Add strong tags to articles~~
 - ~~Try buttons under works list~~
 - ~~Scroll indicator on home~~ The waves work well enough.
 - ~~Resume PDF~~
