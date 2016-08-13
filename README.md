@@ -7,18 +7,21 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 	- Move to seperate page? or scroll indicator?
 	- Try buttons under works list
 	- Add more work? ( Theme Store, Jotform V4 and assets, FC Importer?, Wishbox? )
+- Add strong tags to articles
+- Alt design for article headers
+- Scroll indicator on home
 - Responsiveness
 	- Make img switcher consistent
 	- Improve hero text
 	- Improve footer links
 - Update codepen texts
-- Resume PDF?
 - Back to works links at the end of articles?
 - Convert images to SVG
 - Link images/img preview lightbox?
 
 
 ### DONE
+- ~~Resume PDF~~
 - ~~Responsiveness~~
 	- ~~Mobile previewer~~
 	- ~~Jobspot wireframes~~
