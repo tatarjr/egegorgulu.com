@@ -57,7 +57,7 @@ Our intention from the start was to make this a single page app, so we opted for
 
 ### The Design
 
-We wanted to avoid the classic pitfall of dashboards that provide too much data and end up confusing the user with visual clutter, so we opted for a single big chart that would change based on what the user wanted to see and made sure that the users was able to find what they were looking for.
+We wanted to avoid the classic pitfall of dashboards that provide too much data and end up confusing the user with visual clutter, so we opted for a single big chart that would change based on what the user wanted to see and made sure that the users were able to find what they were looking for.
 
 Following the responses and a few quick evaluation meetings about them, it was clear <strong>how pageviews, responses, conversion rates and time spent changes over time</strong> would <strong>have the most impact</strong> on improving our users success.
 
