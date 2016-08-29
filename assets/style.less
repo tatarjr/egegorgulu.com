@@ -525,9 +525,9 @@ a {
 		z-index: -1;
 		border-radius: 50%;
 		transition:all 0.5s ease;
-		width:110%;
-		height: 0;
-		padding-bottom:154.375%; // this somehow doesnt get perfect circles, close enough for now. 
+		width:180px;
+		height: 180px;
+		//padding-bottom:154.375%; // this somehow doesnt get perfect circles, close enough for now. 
 	}
 
 	&.butt-pri {
@@ -547,11 +547,14 @@ a {
 	&.butt-sec:hover,&.butt-sec:focus{ color:white; border-color:@gray;}
 
 	&:hover:after,&:focus:after {
-		// width:180px;
-		// height:180px;
-		width:110%;
+		//width:180px;
+		//height:180px;
+		width:180px;
+		height:180px;
 		transform: translate(-50%, 50%) scale(1);
+		.resume & { width: 220px; height:220px; }
 	}
+
 }
 
 
@@ -569,7 +572,7 @@ a {
 	}
 	h3 { 
 		&:extend(.text-large);
-		.font-medium(); 
+		.font-bold(); 
 		margin:0;
 	}
 	h4 { 
@@ -593,6 +596,11 @@ a {
 		z-index: -1;
 		transform: translate(-20px, -10px) rotate(-6deg);
 	}
+	.pdf {
+		//text-align: center;
+		border-bottom: 0;
+		.butt {margin:0 !important;}
+	}
 }
 
 .resume-content aside {
@@ -606,12 +614,12 @@ a {
 		background: white;
 		transform:rotate(-4deg) translate(-50%, -65%);
 	}
-	h3 { &:extend(.text-small); }
+	h3 { &:extend(.text-small);.font-medium; }
 	h4 { &:extend(.text-tiny); color:@gray}
 	p { &:extend(.text-tiny); margin-bottom:9px}
 	& > div { 
 		border-bottom: 1px dashed fade(@pink, 50%); 
-		padding: 36px 0 36px; 
+		padding: 36px 0 32px; 
 		//margin-bottom:12px;
 		position: relative;
 
