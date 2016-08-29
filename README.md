@@ -3,7 +3,6 @@ egegorgulu.com
 Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I also keep track of my work here, please excuse the mess.
 
 ### TODO
-- Add a photo of yourself
 - Works section 
 	- Move to seperate page?
 	- Add more work? ( Theme Store, Jotform V4 and assets, FC Importer?, Wishbox? )
@@ -16,6 +15,7 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 - Back to works links at the end of articles?
 - Convert images to SVG
 - Link images/img preview lightbox?
+- Add a photo of yourself?
 
 
 ### DONE
