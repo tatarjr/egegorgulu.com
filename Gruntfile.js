@@ -43,5 +43,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-less');
 
-	grunt.registerTask('default', ['less', 'jekyll', 'clean', 'copy']);
+	grunt.registerTask('jekyll-prod', function(){
+		process.env.JEKYLL_ENV = 'production';
+    	grunt.task.run('jekyll');
+	});
+
+	grunt.registerTask('default', ['less', 'jekyll-prod', 'clean', 'copy']);
 };
