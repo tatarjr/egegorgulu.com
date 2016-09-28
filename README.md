@@ -3,10 +3,18 @@ egegorgulu.com
 Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I also keep track of my work here, please excuse the mess.
 
 ### TODO
+- Next Project Links
+- Works nav
+- Intro gimmick (hand drawn with patterns from tattoo?)
+- Add Writing section
+- Remove bootstrap (?)
 - Works section 
 	- Move to seperate page?
+	- Link in the header
 	- Add more work? ( Theme Store, Jotform V4 and assets, FC Importer?, Wishbox? )
 - Alt design for article headers?
+- Remove photo from resume
+- About section
 - Responsiveness
 	- Make img switcher consistent
 	- Improve hero text
@@ -19,6 +27,8 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 
 
 ### DONE
+- ~~Implement prod and dev envs of jekyll with grunt~~
+- ~~Enable gZip~~
 - ~~Add strong tags to articles~~
 - ~~Try buttons under works list~~
 - ~~Scroll indicator on home~~ The waves work well enough.
