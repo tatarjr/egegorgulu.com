@@ -3,6 +3,7 @@ egegorgulu.com
 Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I also keep track of my work here, please excuse the mess.
 
 ### TODO
+- Islands illustration for opening, rocks and waves with lines
 - Next Project Links
 - Works nav
 - Intro gimmick (hand drawn with patterns from tattoo?)
