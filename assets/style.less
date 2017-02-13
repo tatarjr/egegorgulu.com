@@ -517,6 +517,7 @@ img.no-border {
 	.meta {
 		&:extend(.text-type);
 		text-align:left;
+		margin: 6px 0 24px;
 		span + span:before {
 			content: "\2022 \00a0";
 			display: inline-block;
@@ -647,10 +648,35 @@ img.no-border {
 		}
 		h3 { .text-normal; }
 		h4 { .text-tiny; }
+		.pdf {margin: -30px 0 30px;}
+	}
+	.list-articles {
+		padding: 0 15px;
+		.title {.text-normal;}
+		.article {
+			padding:60px 0;
+			&:first-child {padding-top:30px;}
+		}
+
 	}
 	.img-switcher {line-height: 2;}
 	.butt.butt-pri {margin-right: 0}
+
 	.nav a {.font-regular; margin:0 5px; padding:5px;}
+	.m2 {
+		.col-sm-6 {padding:0;}
+		.nav {
+			padding: 0 15px;
+			a { 
+				letter-spacing: 0;
+				font-size: 14px;
+				margin:0; 
+				padding:3px;
+			}
+		}
+		.logo {position: absolute;}
+	}
+	
 
 	.sect-hero .sect-inner {min-height: 500px;}
 	.phone {
