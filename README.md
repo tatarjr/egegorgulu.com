@@ -3,31 +3,26 @@ egegorgulu.com
 Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I also keep track of my work here, please excuse the mess.
 
 ### TODO
+- New nav mobile problems
 - Islands illustration for opening, rocks and waves with lines
-- Next Project Links
-- Works nav
 - Intro gimmick (hand drawn with patterns from tattoo?)
-- Add Writing section
 - Remove bootstrap (?)
-- Works section 
-	- Move to seperate page?
-	- Link in the header
-	- Add more work? ( Theme Store, Jotform V4 and assets, FC Importer?, Wishbox? )
-- Alt design for article headers?
-- Remove photo from resume
-- About section
+- Add more work? ( Theme Store, Jotform V4 and assets, FC Importer?, Wishbox? )
+- Remove photo from PDF resume?
 - Responsiveness
 	- Make img switcher consistent
 	- Improve hero text
 	- Improve footer links
 - Update codepen texts
-- Back to works links at the end of articles?
 - Convert images to SVG
 - Link images/img preview lightbox?
-- Add a photo of yourself?
 
 
 ### DONE
+- ~~Add Writing section~~
+- ~~Last item in works list doesn't show next link~~
+- ~~Next Project Links~~
+- ~~Works nav~~
 - ~~Implement prod and dev envs of jekyll with grunt~~
 - ~~Enable gZip~~
 - ~~Add strong tags to articles~~

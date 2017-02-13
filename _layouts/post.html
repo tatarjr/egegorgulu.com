@@ -11,11 +11,11 @@
 		<div class="sect-inner">
 			{{ content }}
 			<div class="postNav">
-				{% if page.next.url %}
-<!-- 					<div class="postNav-prev col-sm-6">
-						<a class="next" href="{{page.next.url}}">{{page.next.prettyTitle}}</a>
+				{% if page.previous.url == undefined %}
+					<div class="postNav-prev">
 						<p>Previous Project</p>
-					</div> -->
+						<a class="next" href="{{page.next.url}}">{{page.next.prettyTitle}}</a>
+					</div>
 				{% endif %}
 				{% if page.previous.url %}
 					<div class="postNav-next">
