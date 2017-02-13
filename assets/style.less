@@ -297,7 +297,9 @@ body {
 			}
 		}
 	}
-
+	&-header {
+		color: @yellow;
+	}
 	&-img {
 		.center-align;
 		z-index: -1;
@@ -467,6 +469,7 @@ img.no-border {
 		top:0;
 		left:50%;
 		margin:0;
+		color:@pink;
 		padding:0 9px;
 		background: white;
 		transform:rotate(-4deg) translate(-50%, -65%);
@@ -501,6 +504,7 @@ img.no-border {
 
 	a {
 		.disable-hover;
+		transition: all 0.3s ease;
 		display: block;
 	}
 

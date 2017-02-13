@@ -3,16 +3,17 @@ egegorgulu.com
 Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I also keep track of my work here, please excuse the mess.
 
 ### TODO
-- New nav mobile problems
-- Islands illustration for opening, rocks and waves with lines
-- Intro gimmick (hand drawn with patterns from tattoo?)
+
+
+- Intro gimmick 
+	- Islands illustration for opening, rocks and waves with lines?
+	- Hand drawn with patterns from tattoo?
 - Remove bootstrap (?)
 - Add more work? ( Theme Store, Jotform V4 and assets, FC Importer?, Wishbox? )
 - Remove photo from PDF resume?
 - Responsiveness
 	- Make img switcher consistent
 	- Improve hero text
-	- Improve footer links
 - Update codepen texts
 - Convert images to SVG
 - Link images/img preview lightbox?
@@ -35,6 +36,8 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 	- ~~Scroll lag?~~ vh on hero causes this
 	- ~~Disable double tap issue on works list~~
 	- ~~Double tap to link issue~~
+	- ~~Improve footer links~~
+	- ~~New nav mobile problems~~
 - ~~Pinata Splash font issue~~
 - ~~Wave effect convert to absolute~~
 - ~~Switch less to css~~
