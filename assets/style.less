@@ -536,6 +536,9 @@ img.no-border {
 
 .footer {
 	.text-small { color:@gray; }
+	.footer-text a { 
+		word-break: break-all; 
+	}
 }
 
 .sep {.font-display(); color:@gray;margin:0 6px;}
@@ -645,6 +648,10 @@ img.no-border {
 		p { .text-small; }
 		h1 { .text-big; }
 	}
+	.postNav {
+		margin: 30px auto 60px;
+		p { .text-tiny; }
+	}
 	.resume-content { 
 		aside {
 			padding: 30px 0 0;
@@ -661,7 +668,6 @@ img.no-border {
 			padding:60px 0;
 			&:first-child {padding-top:30px;}
 		}
-
 	}
 	.img-switcher {line-height: 2;}
 	.butt.butt-pri {margin-right: 0}
@@ -678,7 +684,7 @@ img.no-border {
 				padding:3px;
 			}
 		}
-		.logo {position: absolute;}
+		.logo {position: absolute; left:6px; }
 	}
 	
 
