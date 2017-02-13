@@ -1,6 +1,6 @@
 {% include header.html %}
 <body class="post {{ page.selector }}">
-	{% include nav.html %}
+	{% include nav2.html %}
 	<section class="container-fluid sect-hero-mini" style="background-image: url(/assets/img/{{page.cover}})">
 		<div class="sect-inner">
 			<!-- <h1 class="text-sect-header"><span class="rotate6">{{ page.prettyTitle }}</span></h1> -->
@@ -10,6 +10,20 @@
 		<div class="wave wave-top"></div>
 		<div class="sect-inner">
 			{{ content }}
+			<div class="postNav">
+				{% if page.next.url %}
+<!-- 					<div class="postNav-prev col-sm-6">
+						<a class="next" href="{{page.next.url}}">{{page.next.prettyTitle}}</a>
+						<p>Previous Project</p>
+					</div> -->
+				{% endif %}
+				{% if page.previous.url %}
+					<div class="postNav-next">
+						<p>Next Project</p>
+						<a class="previous" href="{{page.previous.url}}">{{page.previous.prettyTitle}}</a>
+			    	</div>
+				{% endif %}
+			</div>
 		</div>
 		<div class="wave wave-bottom"></div>
 	</section>

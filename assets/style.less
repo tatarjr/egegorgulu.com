@@ -236,7 +236,6 @@ body {
 .text-type {
 	&:extend(.text-micro);
 	.font-bold();
-	.text-center();
 	text-transform: uppercase;
 	color:@dark-pink;
 	a:hover & {
@@ -289,12 +288,10 @@ body {
 		transition:all 0.3s ease;
 		border-radius: 30px;
 		position: relative;
-		&:after {display: none;}
+		.disable-hover;
 		&:hover, &:focus {
 			border:1px dashed lighten(@yellow, 10%);
 			background-color: transparent;
-			//box-shadow: 0 2px 3px lighten(@pink, 18%);
-			//transform: scale(1.05);
 			.text-item-header {
 				color: @yellow;
 			}
@@ -310,9 +307,11 @@ body {
 
 	&-type {
 		margin: 0 0 18px;
+		.text-center();
 	}
 
 	&-desc {
+		.text-small;
 		color:@dark-pink;
 		//max-width: 90%;
 		margin:0 auto;
@@ -387,8 +386,25 @@ body {
 	.text-center;
 }
 
+.postNav {
+	border-top: 1px solid #e5e5e5;
+	padding:60px 0 0;
+	margin: 120px auto 0;
+	max-width: 360px;
+	.text-center;
+	p { 
+		&:extend(.text-type);
+		.text-micro;
+		margin:0 0 12px;
+	}
+	a {
+		&:extend(.script-normal);
+		// .font-black;
+	}
+	.col-sm-6 {padding:0;}
+}
 .postNav-next{
-	.text-right;
+	//.text-right;
 }
 
 // Image captions
@@ -418,17 +434,13 @@ img.no-border {
 // Resume Styling
 .resume-content {
 	padding:60px 0;
-	h2 { 
-		color: @pink; 
-		margin:0 0 6px -12px;
-		.rotate6; 
-		//border-bottom: 1px dashed @pink; 
-	}
+
 	h3 { 
 		&:extend(.text-large);
 		.font-bold(); 
 		margin:0;
 	}
+
 	h4 { 
 		.font-light();
 		&:extend(.text-small); 
@@ -442,14 +454,7 @@ img.no-border {
 
 	main { position: relative;}
 	main li { margin-bottom: 60px;}
-	main h2 {
-		position: absolute;
-		left:0;
-		font-size:60px;
-		color:lighten(@pink, 18%);
-		z-index: -1;
-		transform: translate(-20px, -10px) rotate(-6deg);
-	}
+
 	.pdf {
 		//text-align: center;
 		border-bottom: 0;
@@ -460,6 +465,7 @@ img.no-border {
 .resume-content aside {
 	padding:30px 0 0 90px;
 	h2 {
+		.script-small;
 		position: absolute;
 		top:0;
 		left:50%;
@@ -483,7 +489,47 @@ img.no-border {
 	}
 }
 
-// End Resume
+// =========================
+// ARTICLES
+// =========================
+.list-articles {
+	max-width:720px;
+	margin:0 auto;
+}
+
+.article {
+	padding: 90px 0;
+	border-bottom:1px solid #e5e5e5;
+	&:last-child {border-bottom:none;}
+
+	a {
+		.disable-hover;
+		display: block;
+	}
+
+	.title {
+		&:extend(.text-large);
+		.font-bold(); 
+		margin:0;
+	}
+
+	.desc {
+		.text-small;
+		color:@dark-pink;
+	}
+	.meta {
+		&:extend(.text-type);
+		text-align:left;
+		span + span:before {
+			content: "\2022 \00a0";
+			display: inline-block;
+			margin:3px;
+		}
+	}
+}
+
+
+// End Articles
 
 
 .footer {

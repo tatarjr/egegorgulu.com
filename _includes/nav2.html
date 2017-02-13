@@ -1,0 +1,20 @@
+<header class="container-fluid masthead m2">
+	
+	<div class="row">
+		<div class="col-sm-6 col-xs-2 logo">
+			<a class="logo-mark" href="/"><img src="/assets/img/logo2.svg"></a>
+			{% if page.url == "/index.html" %}
+				<a class="logo-text hidden-xs" href="/#works">Portfolio of Ege Gorgulu</a>
+			{% else %}
+				<a class="logo-text hidden-xs" href="/">Ege Gorgulu</a><span class="logo-crumb hidden-xs"> > {{ page.prettyTitle }}</span>
+			{% endif %}
+		</div>
+		<div class="col-sm-6 col-xs-10 nav">
+			<a href="/works">WORKS</a>
+			<a href="/articles">WRITING</a>
+			<a href="/resume">RESUME</a>
+			<a href="mailto:aloha@egegorgulu.com">CONTACT</a>
+		</div>
+	</div>
+	
+</header>

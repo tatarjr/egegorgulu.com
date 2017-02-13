@@ -76,6 +76,13 @@ a {
 	}
 }
 
+.disable-hover {
+	&:after { display: none; }
+	&:hover, &:focus {
+		color:inherit;		
+	}
+}
+
 // Buttons
 .butt {
 	&:extend(.text-small);
