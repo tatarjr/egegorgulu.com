@@ -4,22 +4,22 @@ Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I al
 
 ### TODO
 
-
 - Intro gimmick 
 	- Islands illustration for opening, rocks and waves with lines?
 	- Hand drawn with patterns from tattoo?
+- Vertical Rhythym
 - Remove bootstrap (?)
 - Add more work? ( Theme Store, Jotform V4 and assets, FC Importer?, Wishbox? )
-- Remove photo from PDF resume?
 - Responsiveness
 	- Make img switcher consistent
 	- Improve hero text
 - Update codepen texts
 - Convert images to SVG
-- Link images/img preview lightbox?
 
 
 ### DONE
+- ~~Link images/img preview lightbox?~~
+- ~~Remove photo from PDF resume~~
 - ~~Add Writing section~~
 - ~~Last item in works list doesn't show next link~~
 - ~~Next Project Links~~
