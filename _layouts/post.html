@@ -27,26 +27,6 @@
 		</div>
 		<div class="wave wave-bottom"></div>
 	</section>
+	{% include footer.html %}
 </body>
-{% include footer.html %}
-{% if page.carousel %}
-<script>
-	$(document).ready(function(){
-		$('.img-switcher a').click(function(){
-			var s = $(this).attr('data-target');
-			var top = $('.viewer-cont').offset().top - 105;
-			$('.img-switcher a').removeClass('active');
-			$(this).addClass('active');
-			if ( $('.browser-stage div').hasClass('scroll-to-top') ){
-				$('.browser-stage div').animate({scrollTop:0});
-			}
-			$('body, html').animate({scrollTop: top});
-			$('#stage').attr('src', s);
-			$('.browser-init').remove();
-		});
-		$('.browser-init').click(function(){
-			$(this).remove();
-		});
-	});
-</script>
-{% endif %}
+{% include scripts.html %}

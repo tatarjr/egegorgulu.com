@@ -1,0 +1,87 @@
+	{% if jekyll.environment == "development" %}
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+	{% endif %}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			// Set Hero height
+			function setHeroHeight(){
+				$(".sect-hero .sect-inner").height($(window).height());
+			}
+
+			setHeroHeight();
+			
+			$(window).resize(function(){
+				setHeroHeight();
+			});
+
+			// Sticky header
+			var navSticky = false;
+			var stickyThreshold = 360;
+
+			$(document).scroll(function(){
+				var top = $('body').scrollTop();
+				if ( top > stickyThreshold && !navSticky ) {
+					navSticky = true;
+					$('.masthead').addClass('sticky');
+				}
+				if ( top < 1 && navSticky ) {
+					navSticky = false;
+					$('.masthead').removeClass('sticky');
+				}
+			})
+
+			// Scroll to bottom on contact click
+			$('[href="#footer"]').on('mousedown touchstart', function(e) {
+				e.preventDefault;
+				var a = $('#footer').offset().top;
+				$("body").animate({ scrollTop: a }, 500);
+			});
+
+			// Eliminate the need for double clicking on mobile
+			$('a:not(.grid-item a)').on('touchend', function(e) {
+				var el = $(this);
+				var link = el.attr('href');
+				var target = el.attr('target')
+				if (link && !target) {window.location = link;}
+			});
+
+			// Lightbox for gallery images
+			$('.gallery a').on('mousedown touchstart', function(e) {
+				e.preventDefault;
+				var el = $(this);
+				var src = el.attr('href');
+				console.log(src);
+				$('#lightbox').addClass('active').css('background-image', 'url(' + src + ')');
+			});
+
+			// Lightbox close
+			$('.lb, .lb-close').on('mousedown touchstart', function(e) {
+				$('#lightbox').removeClass('active')
+			});
+		});
+	</script>
+	{% if page.carousel %}
+	<script>
+		$(document).ready(function(){
+			$('.img-switcher a').click(function(){
+				var s = $(this).attr('data-target');
+				var top = $('.viewer-cont').offset().top - 105;
+				$('.img-switcher a').removeClass('active');
+				$(this).addClass('active');
+				if ( $('.browser-stage div').hasClass('scroll-to-top') ){
+					$('.browser-stage div').animate({scrollTop:0});
+				}
+				$('body, html').animate({scrollTop: top});
+				$('#stage').attr('src', s);
+				$('.browser-init').remove();
+			});
+			$('.browser-init').click(function(){
+				$(this).remove();
+			});
+		});
+	</script>
+	{% endif %}
+</html>
