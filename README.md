@@ -3,7 +3,7 @@ egegorgulu.com
 Hi this is the source for my website, [egegorgulu.com](www.egegorgulu.com). I also keep track of my work here, please excuse the mess.
 
 ### TODO
-
+- Mobile lightbox problem
 - Intro gimmick 
 	- Islands illustration for opening, rocks and waves with lines?
 	- Hand drawn with patterns from tattoo?

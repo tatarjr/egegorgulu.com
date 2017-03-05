@@ -16,6 +16,7 @@ prettyTitle: Works
 		<h1 class="text-sect-header"><span class="rotate12">Here are some of my<br> recent works.</span></h1>
 		<ul class="grid list-unstyled">
 			{% for post in site.posts %}
+			{% unless post.hidden %}
 			<li class="grid-item item-{{ post.selector }}">
 				<a href="{{ post.url }}">
 					<img class="grid-item-img" src="/assets/img/icons/item-{{post.selector}}.png">
@@ -24,8 +25,8 @@ prettyTitle: Works
 					<p class="grid-item-desc">{{ post.desc }}</p>
 					<span class="text-link">Read More</span>
 				</a>
-
 			</li>
+			{% endunless %}
 			{% endfor %}
 		</ul>	
 	</div>

@@ -369,9 +369,30 @@ body {
 		margin: 36px 0 18px;
 		//text-transform: uppercase;
 	}
+	h4 {
+		&:extend(.text-normal);
+		.font-semi;
+		text-transform: uppercase;
+		margin: 36px 0 0;
+	}
 	p {
 		&:extend(.text-normal);
 		margin-bottom: 18px;
+	}
+	blockquote {
+		color: @pink;
+		font-style: italic;
+		border:none;
+		padding: 24px 30px;
+		background: fade(@pink, 10%);
+		border-radius: 3px;
+	}
+
+	ul li {
+		&:extend(.text-normal);
+		font-style: italic;
+		font-size: 21px;
+		color: lighten(@dark-pink, 20%);
 	}
 
 	strong { 
