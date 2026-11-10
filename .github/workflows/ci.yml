@@ -1,0 +1,48 @@
+
+name: CI
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  build-site:
+    name: Build and validate site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          package-manager-cache: false
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Build website
+        run: npm run build
+
+      - name: Validate generated website
+        run: |
+          test -s _site/index.html
+          test -s _site/assets/style.css
+          test ! -e _site/Gemfile
+          test ! -e _site/package.json
+
+          echo "Website validation passed"
